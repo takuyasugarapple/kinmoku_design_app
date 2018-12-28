@@ -168,7 +168,7 @@ main .title-text {
     height: 400px;
     float: left;
     border-radius: 5px;
-    box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 20px 70px -5px rgba(0, 0, 0, 0.2);
     background: #fbf9f9;
     background: -moz-linear-gradient(-45deg, #fbf9f9 28%, #e8eaed 100%);
     background: -webkit-linear-gradient(-45deg, #fbf9f9 28%, #e8eaed 100%);
@@ -181,8 +181,7 @@ main .title-text {
       position: relative;
       float: left;
       width: 100%;
-      height: 400px;
-      overflow: hidden; }
+      height: 400px; }
       .cont_modal .cont_text_ingredients .cont_over_hidden .cont_tabs {
         position: relative;
         float: left;
@@ -202,7 +201,7 @@ main .title-text {
               position: relative;
               display: block;
               float: left;
-              padding-top: 15px;
+              padding-top: 5px;
               color: #1d3256;
               text-decoration: none;
               font-size: 14px;
@@ -235,6 +234,36 @@ main .title-text {
             text-align: left;
             padding-right: 15px;
             color: #555; }
+      .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets {
+        position: absolute;
+        bottom: -15px;
+        bottom: -20px;
+        left: 33%;
+        text-align: center;
+        right: 33%;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 50px;
+        overflow: hidden;
+        color: #555; }
+        .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          content: '';
+          width: 120%;
+          height: 100%;
+          background: #4288FB;
+          transform-origin: right top;
+          transform: skewX(-30deg) scale(0, 1);
+          transition: transform .3s; }
+        .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets:hover {
+          background-color: transparent;
+          color: #fff; }
+          .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets:hover::after {
+            transform-origin: left top;
+            transform: skewX(-30deg) scale(1, 1); }
 
 footer {
   background-color: #292c2f;

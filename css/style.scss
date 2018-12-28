@@ -251,7 +251,7 @@ main {
         height: 400px;
         float: left;
         border-radius: 5px;
-        box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.2);
+        box-shadow: 15px 20px 70px -5px rgba(0, 0, 0, 0.2);
         background: rgb(251, 249, 249);
         background: -moz-linear-gradient(-45deg, rgba(251, 249, 249, 1) 28%, rgba(232, 234, 237, 1) 100%);
         background: -webkit-linear-gradient(-45deg, rgba(251, 249, 249, 1) 28%, rgba(232, 234, 237, 1) 100%);
@@ -266,7 +266,6 @@ main {
             float: left;
             width: 100%;
             height: 400px;
-            overflow: hidden;
 
             .cont_tabs {
                 position: relative;
@@ -291,7 +290,7 @@ main {
                             position: relative;
                             display: block;
                             float: left;
-                            padding-top: 15px;
+                            padding-top: 5px;
                             color: $darkcolor;
                             text-decoration: none;
                             font-size: 14px;
@@ -339,9 +338,48 @@ main {
                     }
                 }
             }
+
+            .cont_btn_mas_dets {
+                position: absolute;
+                bottom: -15px;
+                bottom: -20px;
+                left: 33%;
+                text-align: center;
+                right: 33%;
+                padding: 10px 20px;
+                background-color: #fff;
+                border-radius: 50px;
+                overflow: hidden;
+                color: #555;
+
+                &::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    content: '';
+                    width: 120%;
+                    height: 100%;
+                    background: $maincolor;
+                    transform-origin: right top;
+                    transform: skewX(-30deg) scale(0, 1);
+                    transition: transform .3s;
+                }
+    
+                &:hover {
+                    background-color: transparent;
+                    color: #fff;
+
+                    &::after {
+                        transform-origin: left top;
+                        transform: skewX(-30deg) scale(1, 1);
+                    }
+                }
+            }
         }
     }
 }
+
 
 // products-card
 
