@@ -93,8 +93,10 @@ li {
     height: auto; }
     .navbar .nav-list ul {
       position: inherit; } }
-main .title-text {
-  margin-bottom: 40px; }
+main {
+  margin-bottom: 100px; }
+  main .title-text {
+    margin-bottom: 40px; }
 
 .cont_modal {
   position: relative;
@@ -121,7 +123,7 @@ main .title-text {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     transition: all 0.5s;
-    box-shadow: 25px 10px 70px -5px rgba(0, 0, 0, 0.3); }
+    box-shadow: 10px 10px 70px -5px rgba(0, 0, 0, 0.3); }
     .cont_modal .cont_photo .cont_img_back {
       position: absolute;
       width: 100%;
@@ -229,14 +231,11 @@ main .title-text {
             margin-left: 50px;
             border-left: 2px solid rgba(66, 136, 251, 0.1);
             font-size: 12px;
-            padding: 20px 0px;
-            padding-left: 20px;
+            padding: 20px 20px;
             text-align: left;
-            padding-right: 15px;
             color: #555; }
       .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets {
         position: absolute;
-        bottom: -15px;
         bottom: -20px;
         left: 33%;
         text-align: center;
@@ -265,6 +264,40 @@ main .title-text {
             transform-origin: left top;
             transform: skewX(-30deg) scale(1, 1); }
 
+@media (max-width: 992px) {
+  .cont_modal {
+    width: 100%; }
+    .cont_modal .cont_photo {
+      top: 0;
+      width: 100%;
+      height: 300px;
+      box-shadow: none;
+      border-radius: 0; }
+      .cont_modal .cont_photo .cont_detalles {
+        border-radius: 0; }
+      .cont_modal .cont_photo .cont_img_back:hover > img {
+        transform: scale(1); }
+    .cont_modal .cont_text_ingredients {
+      position: inherit;
+      margin-left: 0;
+      width: 100%;
+      left: 0;
+      box-shadow: none;
+      border-radius: 0; }
+      .cont_modal .cont_text_ingredients .cont_over_hidden .cont_tabs {
+        width: 100%; }
+        .cont_modal .cont_text_ingredients .cont_over_hidden .cont_tabs ul li {
+          left: 0;
+          right: auto;
+          margin-left: 40px; }
+      .cont_modal .cont_text_ingredients .cont_over_hidden .cont_text_det_preparation {
+        width: 100%; }
+        .cont_modal .cont_text_ingredients .cont_over_hidden .cont_text_det_preparation .cont_title_preparation {
+          width: 100%; }
+        .cont_modal .cont_text_ingredients .cont_over_hidden .cont_text_det_preparation .cont_info_preparation p {
+          margin-right: 40px; }
+      .cont_modal .cont_text_ingredients .cont_over_hidden .cont_btn_mas_dets {
+        box-shadow: 10px 10px 70px -5px rgba(0, 0, 0, 0.3); } }
 footer {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -310,5 +343,106 @@ footer {
     margin: 0 auto 20px; }
   footer .footer-left p.footer-links {
     line-height: 1.8; } }
+.product-show {
+  box-shadow: 15px 20px 70px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 80px; }
+  .product-show .product_row {
+    margin: 0; }
+    .product-show .product_row .product-img {
+      height: 400px;
+      background-image: url("../img/products-thumnail1.png");
+      background-size: cover; }
+    .product-show .product_row .product-info {
+      height: 400px;
+      padding-left: 40px;
+      background-color: #fff; }
+      .product-show .product_row .product-info .product-text h4 {
+        padding-top: 52px; }
+      .product-show .product_row .product-info .product-text h6 {
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-bottom: 7px solid #4288FB;
+        text-transform: uppercase;
+        color: #d2d2d2;
+        letter-spacing: 0.2em; }
+      .product-show .product_row .product-info .product-text p {
+        line-height: 1.7em;
+        padding-right: 40px; }
+      .product-show .product_row .product-info .product-time {
+        margin-top: 30px; }
+        .product-show .product_row .product-info .product-time span {
+          color: #4288FB; }
+  .product-show .progressbar_show {
+    padding: 30px 35px;
+    position: relative;
+    margin: 0 -15px; }
+    .product-show .progressbar_show .progress_item {
+      border-radius: 30px;
+      height: 30px; }
+    .product-show .progressbar_show .btn-demo .cont_btn_mas_dets {
+      position: absolute;
+      bottom: -27px;
+      right: 15px;
+      border: 1px solid rgba(104, 155, 238, 0.2);
+      padding: 15px 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      color: #555; }
+      .product-show .progressbar_show .btn-demo .cont_btn_mas_dets::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: '';
+        width: 120%;
+        height: 100%;
+        background: #4288FB;
+        transform-origin: right top;
+        transform: skewX(-30deg) scale(0, 1);
+        transition: transform .3s; }
+      .product-show .progressbar_show .btn-demo .cont_btn_mas_dets:hover {
+        background-color: transparent;
+        color: #fff; }
+        .product-show .progressbar_show .btn-demo .cont_btn_mas_dets:hover::after {
+          transform-origin: left top;
+          transform: skewX(-30deg) scale(1, 1); }
+
+@media (max-width: 992px) {
+  .product-show .product_row {
+    margin: 0; }
+    .product-show .product_row .product-img {
+      height: 300px; }
+  .product-show .progressbar_show .btn-demo {
+    margin-top: 30px; }
+    .product-show .progressbar_show .btn-demo .cont_btn_mas_dets {
+      position: inherit;
+      bottom: auto;
+      right: auto;
+      width: 100%; } }
+.material-list {
+  margin: 0; }
+  .material-list .list-group .list-title {
+    height: 100px;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    z-index: 2;
+    color: #fff;
+    background-color: #292c2f;
+    border-left: 5px solid #4288FB; }
+    .material-list .list-group .list-title span {
+      font-weight: bold; }
+  .material-list .list-group .list-item {
+    height: 70px;
+    padding-top: 21px;
+    padding-bottom: 21px; }
+    .material-list .list-group .list-item:hover {
+      background-color: #fefefe; }
+    .material-list .list-group .list-item.active {
+      background-color: #F1F6FE;
+      color: #4288FB;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-left: 5px solid #4288FB; }
 
 /*# sourceMappingURL=style.css.map */
