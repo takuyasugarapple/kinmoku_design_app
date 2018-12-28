@@ -37,7 +37,7 @@ li {
 
 // navbar
 .navbar {
-    padding: 0 30px;
+    padding: 0 5%;
     min-height: 80px;
     background: #fefefe;
     border: none;
@@ -123,6 +123,21 @@ li {
         }
     }
 
+}
+
+@media (max-width: 992px) {
+
+    .navbar {
+
+
+        .nav-list {
+            height: auto;
+
+            ul {
+                position: inherit;
+            }
+        }
+    }
 }
 
 // navbar
@@ -258,7 +273,7 @@ main {
                 float: left;
                 width: 410px;
                 height: 60px;
-                border-bottom: 2px solid rgba(66,136,251,0.1);
+                border-bottom: 2px solid rgba(66, 136, 251, 0.1);
 
 
                 ul {
@@ -290,30 +305,31 @@ main {
             .cont_text_det_preparation {
                 position: relative;
                 width: 410px;
-        
+
                 .cont_title_preparation {
                     position: relative;
                     float: left;
                     margin: 10px 0px;
                     width: 410px;
-            
+
                     p {
                         font-weight: 700;
                         font-size: 14px;
+                        margin-bottom: 0;
                         margin-left: 40px;
                         text-align: left;
                         color: $darkcolor;
                     }
                 }
-            
+
                 .cont_info_preparation {
                     position: relative;
                     float: left;
-            
+
                     p {
                         margin: 5px 0px;
                         margin-left: 50px;
-                        border-left: 2px solid rgba(66,136,251,0.1);
+                        border-left: 2px solid rgba(66, 136, 251, 0.1);
                         font-size: 12px;
                         padding: 20px 0px;
                         padding-left: 20px;
@@ -343,7 +359,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    padding: 45px 50px;
+    padding: 45px 5%;
     margin-top: 80px;
 
     .footer-left {
