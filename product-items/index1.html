@@ -18,14 +18,18 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
     <title>近もく会 | Products | Show</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/iziModal.css">
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
 
     <!-- javascript -->
     <script type="text/javascript" src="../js/footerFixed.js"></script>
+    <script src="../js/iziModal.min.js"></script>
 
-    <link rel="stylesheet" href="../Modaal-master/dist/css/modaal.css">
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src="../Modaal-master/dist/js/modaal.js"></script>
 </head>
 
 <body>
@@ -86,11 +90,16 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="slides-images">
-                                <div class="slides-one-item">
-                                    <img src="../img/sample-icon.jpg" alt="" class="img-fluid">
+                            <div style="height:100%;">
+                                <div class="slides-images">
+                                    <div class="slides-one-item">
+                                        <img src="../img/sample-icon.jpg" alt="" class="img-fluid" data-iziModal-open=".iziModal">
+                                        <div class="iziModal slide-modal" data-izimodal-title="ヘッダー部分のタイトル (無くても動作します)"
+                                            data-izimodal-subtitle="ヘッダータイトルの下部に表示される説明文(無くても動作します)">
+                                            <img src="../img/sample-icon.jpg" alt="" class="img-fluid">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
                         </section>
                     </div>
                 </div>
@@ -106,26 +115,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script>
+    <script type="text/javascript">
         $(function () {
-
-            $('.modal').modaal({
-                type: 'ajax', // コンテンツのタイプを指定
-                animation_speed: '500', // アニメーションのスピードをミリ秒単位で指定
-                background: '#fff', // 背景の色を白に変更
-                overlay_opacity: '0.9', // 背景のオーバーレイの透明度を変更
-                fullscreen: 'true', // フルスクリーンモードにする
-                background_scroll: 'true', // 背景をスクロールさせるか否か
-                loading_content: 'Now Loading, Please Wait.' // 読み込み時のテキスト表示
-            });
-        });
+            $(".iziModal").iziModal();
+        })
     </script>
 </body>
 

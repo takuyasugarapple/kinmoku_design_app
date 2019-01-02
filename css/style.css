@@ -34,7 +34,8 @@ li {
   border-radius: 0;
   margin-bottom: 40px;
   border-bottom: 1px solid #e4e4e4;
-  position: sticky; }
+  position: sticky;
+  position: -webkit-sticky; }
   .navbar .logo {
     width: 50px;
     height: 80px; }
@@ -504,27 +505,30 @@ footer {
         position: absolute;
         display: block;
         width: 100%;
-        height: 650px;
-        left: 50%;
-        top: 50%;
-        bottom: auto;
-        right: auto;
-        transform: translate(-50%, -50%) scale(0.87675);
-        margin: auto; }
-        .slides .slides-container .slides-bg .slides-content section .slides-text {
-          color: #3f4348;
-          line-height: 1.6;
-          font-size: 47.65%;
-          margin-top: 0; }
-          .slides .slides-container .slides-bg .slides-content section .slides-text span {
-            color: #00a3d3; }
-        .slides .slides-container .slides-bg .slides-content section .slides-images {
-          position: absolute;
-          top: 31%;
-          width: 100%;
-          text-align: center; }
-          .slides .slides-container .slides-bg .slides-content section .slides-images .slides-one-item {
-            width: 650px;
-            display: inline-block; }
+        margin: auto;
+        padding: 7% 5%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+        .slides .slides-container .slides-bg .slides-content section {
+          height: 100%;
+          position: relative; }
+          .slides .slides-container .slides-bg .slides-content section .slides-text {
+            color: #3f4348;
+            line-height: 1.6;
+            font-size: 47.65%;
+            margin-top: 0; }
+            .slides .slides-container .slides-bg .slides-content section .slides-text span {
+              color: #00a3d3; }
+          .slides .slides-container .slides-bg .slides-content section .slides-images {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center; }
+            .slides .slides-container .slides-bg .slides-content section .slides-images .slides-one-item {
+              max-width: 650px;
+              display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
