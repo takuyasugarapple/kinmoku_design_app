@@ -136,9 +136,19 @@ li {
 
             ul {
                 position: inherit;
+
+                li{
+                    margin-bottom: 10px;
+                }
             }
         }
     }
+
+    .navbar-light{
+        .navbar-toggler{
+            border: none;
+        }
+    } 
 }
 
 // navbar

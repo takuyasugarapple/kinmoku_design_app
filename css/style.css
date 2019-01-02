@@ -93,7 +93,12 @@ li {
   .navbar .nav-list {
     height: auto; }
     .navbar .nav-list ul {
-      position: inherit; } }
+      position: inherit; }
+      .navbar .nav-list ul li {
+        margin-bottom: 10px; }
+
+  .navbar-light .navbar-toggler {
+    border: none; } }
 main {
   margin-bottom: 100px; }
   main .title-text {
