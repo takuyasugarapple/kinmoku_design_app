@@ -136,6 +136,28 @@ li {
 
             ul {
                 position: inherit;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .navbar-light {
+        .navbar-toggler {
+            border: none;
+
+            i {
+                font-size: 40px;
+                -webkit-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+
+            }
+
+            &:hover i{
+                color: $maincolor;
             }
         }
     }
@@ -384,6 +406,7 @@ main {
 @media (max-width: 992px) {
     .cont_modal {
         width: 100%;
+        height: 100%;
 
         .cont_photo {
             top: 0;
@@ -391,6 +414,7 @@ main {
             height: 300px;
             box-shadow: none;
             border-radius: 0;
+            float: inherit;
 
             .cont_detalles {
                 border-radius: 0;
@@ -411,10 +435,16 @@ main {
             left: 0;
             box-shadow: none;
             border-radius: 0;
+            float: inherit;
+            height: 100%;
 
             .cont_over_hidden {
+                float: inherit;
+                height: 100%;
+
                 .cont_tabs {
                     width: 100%;
+                    float: inherit;
 
                     ul {
                         li {
@@ -430,17 +460,42 @@ main {
 
                     .cont_title_preparation {
                         width: 100%;
+                        float: inherit;
                     }
 
                     .cont_info_preparation {
+                        float: inherit;
+
                         p {
                             margin-right: 40px;
+                            padding-bottom: 30px;
+
                         }
                     }
                 }
 
                 .cont_btn_mas_dets {
                     box-shadow: 10px 10px 70px -5px rgba(0, 0, 0, 0.3);
+                    width: 90%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 5%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .cont_modal {
+        .cont_text_ingredients {
+            .cont_over_hidden {
+                .cont_text_det_preparation {
+                    .cont_info_preparation {
+                        p {
+                            margin-right: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -825,8 +880,6 @@ footer {
                     height: 100%;
                     position: relative;
 
-                    .slides-title {}
-
                     .slides-text {
 
                         color: #3f4348;
@@ -837,6 +890,15 @@ footer {
                         span {
                             color: #00a3d3;
                         }
+                    }
+
+                    .slide-materials{
+                        height:100%;           
+                    }
+
+                    .slide-materials-carousel{
+                        height: 100%;
+                        display: none;
                     }
 
                     .slides-images {
@@ -851,15 +913,34 @@ footer {
                             max-width: 650px;
                             display: inline-block;
 
-                            .slide-modal{
-                                
-                            }
+                            .slide-modal {}
                         }
                     }
                 }
             }
         }
     }
+}
+
+
+@media (max-width: 992px) {
+    .slides{
+        .slides-container{
+            .slides-bg{
+                .slides-content{
+                    section{
+                        .slide-materials{
+                            display: none;
+                        }
+
+                        .slide-materials-carousel{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    } 
 }
 
 // carousels
