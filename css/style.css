@@ -572,5 +572,11 @@ footer {
     display: none; }
   .slides .slides-container .slides-bg .slides-content section .slide-materials-carousel {
     display: block; } }
+.slider {
+  height: 100%; }
+  .slider .slick-list {
+    height: 100%; }
+    .slider .slick-list .slick-track {
+      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
