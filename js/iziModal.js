@@ -1443,7 +1443,7 @@
 	$.fn[PLUGIN_NAME].defaults = {
 	    title: '',
 	    subtitle: '',
-	    headerColor: '#88A0B9',
+	    headerColor: '#1d3256',
 	    background: null,
 	    theme: '',  // light
 	    icon: null,
