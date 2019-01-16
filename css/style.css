@@ -37,7 +37,7 @@ li {
   position: sticky;
   position: -webkit-sticky; }
   .navbar .logomark {
-    height: 80px;
+    height: 50px;
     width: 100px; }
   .navbar .logo {
     width: 100%;
@@ -573,7 +573,8 @@ footer {
             text-align: center; }
             .slides .slides-container .slides-bg .slides-content section .slides-images .row {
               position: absolute;
-              bottom: 0; }
+              bottom: 0;
+              width: 100%; }
             .slides .slides-container .slides-bg .slides-content section .slides-images .slides-one-item {
               max-width: 650px;
               display: inline-block; }
