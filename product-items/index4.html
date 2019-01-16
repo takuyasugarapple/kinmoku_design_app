@@ -40,7 +40,7 @@
 
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="" href="#">
+        <a class="logomark" href="#">
             <img src="../img/kinmoku-logo.svg" alt="" class="logo">
         </a>
 
@@ -104,7 +104,7 @@
                                             <div class="row justify-content-md-center">
                                                 <div class="col-sm-6">
                                                     <img src="../img/sample-icon.jpg" alt="" class="img-fluid slides-item1"
-                                                        data-iziModal-open=".iziModal">
+                                                        >
                                                     <div id="slides-modal1" class="iziModal" data-izimodal-title="ヘッダー部分のタイトル (無くても動作します)"
                                                         data-izimodal-subtitle="ヘッダータイトルの下部に表示される説明文(無くても動作します)">
                                                         <img src="../img/sample-icon.jpg" alt="" class="img-fluid">
@@ -112,7 +112,7 @@
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <img src="../img/sample-icon2.jpg" alt="" class="img-fluid slides-item2"
-                                                        data-iziModal-open=".iziModal">
+                                                        >
                                                     <div id="slides-modal2" class="iziModal" data-izimodal-title="ヘッダー部分のタイトル (無くても動作します)"
                                                         data-izimodal-subtitle="ヘッダータイトルの下部に表示される説明文(無くても動作します)">
                                                         <img src="../img/sample-icon2.jpg" alt="" class="img-fluid">
@@ -138,22 +138,13 @@
                                                         </ol>
                                                         <div class="carousel-inner">
                                                             <div class="carousel-item active">
-                                                                <img src="../img/sample-icon.jpg" alt="" class="img-fluid slides-item3"
-                                                                    data-iziModal-open=".iziModal">
-                                                                <div id="slides-modal3" class="iziModal"
-                                                                    data-izimodal-title="ヘッダー部分のタイトル (無くても動作します)"
-                                                                    data-izimodal-subtitle="ヘッダータイトルの下部に表示される説明文(無くても動作します)">
-                                                                    <img src="../img/sample-icon.jpg" alt="" class="img-fluid">
+                                                                <img src="../img/sample-icon.jpg" alt="" class="img-fluid slides-item1"
+                                                                    >
                                                                 </div>
                                                             </div>
                                                             <div class="carousel-item">
-                                                                <img src="../img/sample-icon2.jpg" alt="" class="img-fluid slides-item4"
-                                                                    data-iziModal-open=".iziModal">
-                                                                <div id="slides-modal4" class="iziModal"
-                                                                    data-izimodal-title="ヘッダー部分のタイトル (無くても動作します)"
-                                                                    data-izimodal-subtitle="ヘッダータイトルの下部に表示される説明文(無くても動作します)">
-                                                                    <img src="../img/sample-icon2.jpg" alt="" class="img-fluid">
-                                                                </div>
+                                                                <img src="../img/sample-icon2.jpg" alt="" class="img-fluid slides-item2"
+                                                                    >
                                                             </div>
                                                         </div>
                                                         <a class="carousel-control-prev" href="#carouselExampleIndicators"
@@ -204,6 +195,12 @@
 
     <script type="text/javascript">
         $(function () {
+
+
+            $(".iziModal").iziModal({
+                group: "group01",
+                loop: true
+            });
 
             $(document).on('click', '.slides-item1', function (event) {
                 event.preventDefault();
