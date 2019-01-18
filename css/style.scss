@@ -897,6 +897,21 @@ footer {
                         font-size: 47.65%;
                         margin-top: 0;
 
+                        a{
+                            border-bottom: 2px solid $maincolor;
+                            
+                            &:hover{
+                                border-bottom: 2px solid $darkcolor;
+                                transition: all 1s ease-out;
+
+                                span{
+                                    color: $darkcolor;
+                                    transition: all 1s ease-out;
+                                    
+                                }
+                            }
+                        }
+
                         span {
                             color: $maincolor;
                         }

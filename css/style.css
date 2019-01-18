@@ -556,6 +556,14 @@ footer {
             line-height: 1.6;
             font-size: 47.65%;
             margin-top: 0; }
+            .slides .slides-container .slides-bg .slides-content section .slides-text a {
+              border-bottom: 2px solid #4288FB; }
+              .slides .slides-container .slides-bg .slides-content section .slides-text a:hover {
+                border-bottom: 2px solid #1d3256;
+                transition: all 1s ease-out; }
+                .slides .slides-container .slides-bg .slides-content section .slides-text a:hover span {
+                  color: #1d3256;
+                  transition: all 1s ease-out; }
             .slides .slides-container .slides-bg .slides-content section .slides-text span {
               color: #4288FB; }
           .slides .slides-container .slides-bg .slides-content section .slide-materials {
