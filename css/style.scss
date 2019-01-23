@@ -897,17 +897,17 @@ footer {
                         font-size: 47.65%;
                         margin-top: 0;
 
-                        a{
+                        a {
                             border-bottom: 2px solid $maincolor;
-                            
-                            &:hover{
+
+                            &:hover {
                                 border-bottom: 2px solid $darkcolor;
                                 transition: all 1s ease-out;
 
-                                span{
+                                span {
                                     color: $darkcolor;
                                     transition: all 1s ease-out;
-                                    
+
                                 }
                             }
                         }
@@ -1087,3 +1087,89 @@ footer {
 }
 
 // slick
+
+// article
+
+article {
+    .article-thum {
+        height: 300px;
+        background-image: url(../img/sample-icon.jpg);
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+
+    .article-day {
+        opacity: 0.5;
+        margin-bottom: 50px
+    }
+
+    section {
+        margin-bottom: 50px;
+
+        h3 {
+            padding: 0.1em 0.5em;
+            border-left: solid 7px $maincolor;
+        }
+
+        h4 {
+            display: inline-block;
+            background: linear-gradient(transparent 70%, $maincolor 110%);
+        }
+
+        p {
+            span {
+                color: $maincolor;
+            }
+
+            a {
+                color: $maincolor;
+                border-bottom: 2px solid $maincolor;
+
+                &:hover {
+                    color: $maincolor;
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .article-img-contents {
+            .article-img {
+                height: 400px;
+                margin-bottom: 5px;
+                overflow: hidden;
+
+                img {
+                    height: auto;
+                }
+            }
+
+            p {
+                font-size: 0.8rem;
+
+                a {
+                    color: $maincolor;
+                    border-bottom: 1px solid $maincolor;
+
+                    &:hover {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    article {
+        section {
+            .article-img-contents {
+                .article-img {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
+
+// article
