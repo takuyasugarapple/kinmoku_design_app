@@ -1044,6 +1044,27 @@ footer {
     }
 }
 
+@media(max-height: 800px) {
+    .slides {
+        .slides-container {
+            .slides-bg {
+                .slides-content {
+                    padding: 3% 5%;
+
+                    section {
+                    .slides-images {
+                        img{
+                            height: 7em;
+                            margin: 0 auto;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // carousels
 
 
