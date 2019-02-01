@@ -91,7 +91,8 @@
                                         </div>
                                         <div class="col-md-7 slides-text">
                                             <p>
-                                                とてもきれいに整列された <span>グリッド</span> の表示です。とても組む機会が多いレイアウトで、この基礎的なレイアウトを身に着けておくと今後便利だと思います。
+                                                とてもきれいに整列された <span>グリッド</span>
+                                                の表示です。とても組む機会が多いレイアウトで、この基礎的なレイアウトを身に着けておくと今後便利だと思います。
                                             </p>
                                         </div>
                                     </div>
@@ -147,7 +148,8 @@
                                         </div>
                                         <div class="col-md-7 slides-text">
                                             <p>
-                                                タイトルの構成はactivitiesのものとほぼ一緒です。タイトルの下にこれから作っていくグリッドとの間隔をあけるために <span>memberes-titl13</span> クラスでcssを書きましょう。
+                                                タイトルの構成はactivitiesのものとほぼ一緒です。タイトルの下にこれから作っていくグリッドとの間隔をあけるために <span>memberes-titl13</span>
+                                                クラスでcssを書きましょう。
                                             </p>
                                         </div>
                                     </div>
@@ -159,7 +161,8 @@
                                             <div class="row justify-content-md-center">
                                                 <div class="col-sm-6">
                                                     <img src="../img/スライド138.PNG" alt="" class="img-fluid slides-item2">
-                                                    <div id="slides-modal2" class="iziModal" data-izimodal-title="タイトルの構成" data-izimodal-subtitle="activitiesのものとほぼ一緒です。">
+                                                    <div id="slides-modal2" class="iziModal" data-izimodal-title="タイトルの構成"
+                                                        data-izimodal-subtitle="activitiesのものとほぼ一緒です。">
                                                         <img src="../img/スライド138.PNG" alt="" class="img-fluid">
                                                     </div>
                                                 </div>
@@ -218,8 +221,8 @@
                                 <!-- -------6------- -->
                                 <div>
                                     <h3>どんどんいきましょう！</h3>
-                                    <a class="btn cont_btn_mas_dets" href="2.html">
-                                        次にすすむ
+                                    <a class="btn cont_btn_mas_dets" data-toggle="modal" data-target="#basicExampleModal">
+                                        Let's Go!
                                     </a>
                                 </div>
                                 <!-- -------6------- -->
@@ -231,6 +234,42 @@
         </div>
         <!-- slides -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="basicExampleModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <!-- modal header content -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="basicExampleModal">グリッド</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- modal header content -->
+
+                    <!-- modal body content -->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <p>
+                                このグリッドのレイアウトはbootstrapのrowクラスの本領発揮ともいえます。頑張って覚えてしまいましょう！
+                            </p>
+                        </div>
+                        <img src="../img/popup8.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <!-- modal body content -->
+
+                    <!-- modal footer content -->
+                    <div class="modal-footer">
+                        <a href="../../index3.html" class="btn cont_btn_mas_dets">教材を確認する</a>
+                        <a href="../7/2.html" class="btn cont_btn_mas_dets_second">次に進む</a>
+                    </div>
+                    <!-- modal footer content -->
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
 
     </main>
     <!-- main -->
@@ -246,81 +285,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(function () {
-
-            $(document).on('click', '.slides-item1', function (event) {
-                event.preventDefault();
-                $('#slides-modal1').iziModal('open');
-            });
-            $('#slides-modal1').iziModal();
-
-            $(document).on('click', '.slides-item2', function (event) {
-                event.preventDefault();
-                $('#slides-modal2').iziModal('open');
-            });
-            $('#slides-modal2').iziModal();
-
-            $(document).on('click', '.slides-item3', function (event) {
-                event.preventDefault();
-                $('#slides-modal3').iziModal('open');
-            });
-            $('#slides-modal3').iziModal();
-
-            $(document).on('click', '.slides-item4', function (event) {
-                event.preventDefault();
-                $('#slides-modal4').iziModal('open');
-            });
-            $('#slides-modal4').iziModal();
-
-            $(document).on('click', '.slides-item5', function (event) {
-                event.preventDefault();
-                $('#slides-modal5').iziModal('open');
-            });
-            $('#slides-modal5').iziModal();
-
-            $(document).on('click', '.slides-item6', function (event) {
-                event.preventDefault();
-                $('#slides-modal6').iziModal('open');
-            });
-            $('#slides-modal6').iziModal();
-
-            $(document).on('click', '.slides-item7', function (event) {
-                event.preventDefault();
-                $('#slides-modal7').iziModal('open');
-            });
-            $('#slides-modal7').iziModal();
-
-            $(document).on('click', '.slides-item8', function (event) {
-                event.preventDefault();
-                $('#slides-modal8').iziModal('open');
-            });
-            $('#slides-modal8').iziModal();
-
-            $(document).on('click', '.slides-item9', function (event) {
-                event.preventDefault();
-                $('#slides-modal9').iziModal('open');
-            });
-            $('#slides-modal9').iziModal();
-
-            $(document).on('click', '.slides-item10', function (event) {
-                event.preventDefault();
-                $('#slides-modal10').iziModal('open');
-            });
-            $('#slides-modal10').iziModal();
-
-            $(document).on('click', '.slides-item11', function (event) {
-                event.preventDefault();
-                $('#slides-modal11').iziModal('open');
-            });
-            $('#slides-modal11').iziModal();
-
-            $('.slider').slick({
-                dots: true
-            });
-
-        });
-    </script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>
