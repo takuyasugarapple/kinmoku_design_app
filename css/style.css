@@ -196,6 +196,12 @@ h6 {
 }
 
 @media (max-width: 992px) {
+  .navbar {
+    min-height: 50px;
+  }
+  .navbar .logomark {
+    height: 30px;
+  }
   .navbar .nav-list {
     height: auto;
   }
@@ -1251,6 +1257,12 @@ article section .cont_btn_mas_dets:hover::after {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .content_head {
+    height: 200px;
+  }
+}
+
 .material_text {
   margin-bottom: 40px;
 }
@@ -1279,8 +1291,8 @@ article section .cont_btn_mas_dets:hover::after {
 
 .material_chapter .material_items ul li .chapter-circle {
   margin-right: 15px;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   line-height: 100%;
   border-radius: 50%;
@@ -1306,8 +1318,8 @@ article section .cont_btn_mas_dets:hover::after {
 
 .material_chapter .material_items ul li .chapter-circle:hover {
   margin-right: 13px;
-  width: 37px;
-  height: 37px;
+  width: 32px;
+  height: 32px;
   background-color: #4288FB;
   transition: background-color .2s ease-in;
   -webkit-transition: background-color .2s ease-in;
@@ -1329,5 +1341,53 @@ article section .cont_btn_mas_dets:hover::after {
 @media (max-width: 992px) {
   .material_chapter {
     display: none;
+  }
+}
+
+.material_article {
+  border-radius: 5px;
+  padding: 80px 70px;
+  box-shadow: 0 0 40px 0 rgba(66, 136, 251, 0.2);
+}
+
+.material_article h2, .material_article p, .material_article .p_box_text, .material_article .img_text, .material_article h4 {
+  margin-bottom: 30px;
+}
+
+.material_article p {
+  opacity: 0.6;
+  line-height: 1.9em;
+}
+
+.material_article p span {
+  opacity: 1;
+  font-weight: bold;
+  color: #1d3256;
+}
+
+.material_article .p_box {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px 15px;
+  line-height: 1.9em;
+}
+
+.material_article .p_box_text {
+  line-height: 1.9em;
+}
+
+.material_article h4 {
+  border-left: 5px solid #4288FB;
+  padding: 10px 20px;
+}
+
+.material_article .primary_btn {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .material_article {
+    box-shadow: none;
+    padding: 0 15px;
   }
 }

@@ -214,6 +214,12 @@ h6 {
 @media (max-width: 992px) {
 
     .navbar {
+        min-height: 50px;
+
+        .logomark{
+            height: 30px;
+        }
+
         .nav-list {
             height: auto;
 
@@ -1495,6 +1501,7 @@ article {
 // product_box--------------------------
 
 
+// content_head ------------------------
 .content_head {
     height: 385px;
     width: 100%;
@@ -1513,6 +1520,13 @@ article {
         }
     }
 }
+
+@media (max-width: 768px) {
+    .content_head{
+        height: 200px;
+    }
+}
+// content_head ------------------------
 
 // material-text ---------------------
 
@@ -1548,8 +1562,8 @@ article {
             li {
                 .chapter-circle {
                     margin-right: 15px;
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                     text-align: center;
                     line-height: 100%;
                     border-radius: 50%;
@@ -1574,8 +1588,8 @@ article {
 
                     &:hover {
                         margin-right: 13px;
-                        width: 37px;
-                        height: 37px;
+                        width: 32px;
+                        height: 32px;
                         background-color: $maincolor;
                         transition: background-color .2s ease-in;
                         -webkit-transition: background-color .2s ease-in;
@@ -1605,3 +1619,55 @@ article {
         display: none;
     }
 }
+
+
+// material_article ----------------------
+
+.material_article{
+    border-radius: 5px;
+    padding: 80px 70px;
+    box-shadow: 0 0 40px 0 rgba(66, 136, 251, 0.2);
+
+    h2, p, .p_box_text, .img_text, h4{
+        margin-bottom: 30px;
+    }
+
+    p{
+        opacity: 0.6;
+        line-height: 1.9em;
+
+        span{
+            opacity: 1;
+            font-weight: bold;
+            color: $darkcolor;
+        }
+    }
+
+    .p_box{
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 20px 15px;
+        line-height: 1.9em;
+    }
+
+    .p_box_text{
+        line-height: 1.9em;
+    }
+    
+    h4{
+        border-left: 5px solid $maincolor;
+        padding: 10px 20px;
+    }
+
+    .primary_btn{
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .material_article{
+        box-shadow: none;
+        padding: 0 15px;
+    }
+}
+// material_article ----------------------
