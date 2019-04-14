@@ -1348,81 +1348,45 @@ article {
 // success modal
 
 .modal {
+    top: 50px;
+
     .modal-dialog {
         .modal-content {
-            -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
             border: 0;
             -webkit-border-radius: .125rem;
             border-radius: .125rem;
 
-            .modal-header {
-                -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
-                border: none;
-                background-color: $maincolor;
-
-                .modal-title {
-                    margin: 0;
-                    padding: .3rem;
-                    font-size: 1.15rem;
-                    color: #fff;
-                    opacity: 0.8;
-                }
-
-                .close {
-                    span {
-                        color: #fff;
-
-                        &:hover {
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-
             .modal-body {
-                i {
+                padding: 60px 40px 40px; 
+
+                img{
+                    border-radius:50%;
+                    margin-bottom: 40px;
+                }
+
+                h4{
                     color: $maincolor;
+                    margin-bottom: 10px;
                 }
             }
 
             .modal-footer {
-                .cont_btn_mas_dets {
-                    line-height: 20px;
-                    font-size: 1em;
-                    padding: 15px 30px;
-                    background-color: $maincolor;
-                    border-radius: 5px;
-                    overflow: hidden;
-                    color: #fff;
-                    z-index: 10;
-                    border: 3px solid $maincolor;
+                border-top: none;
+                padding: 0 40px 50px;
+                display: inline;
 
-                    &:hover {
-                        background-color: #fff;
-                        color: $maincolor;
-
-                    }
+                .primary_btn{
+                    width: 100%;
                 }
+            }
 
-                .cont_btn_mas_dets_second {
-                    line-height: 20px;
-                    font-size: 1em;
-                    padding: 15px 30px;
-                    background-color: #fff;
-                    border-radius: 5px;
-                    overflow: hidden;
-                    color: #555;
-                    z-index: 10;
-                    border: 3px solid $maincolor;
-
-                    &:hover {
-                        background-color: $maincolor;
-                        color: #fff;
-
-                    }
-                }
+            .modal-footer>:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }     
+            
+            .modal-footer>:not(:first-child) {
+                margin-left: 0;
             }
         }
     }
@@ -1661,6 +1625,10 @@ article {
 
     .primary_btn{
         width: 100%;
+    }
+
+    a{
+        cursor: pointer;
     }
 }
 
