@@ -1484,6 +1484,19 @@ article {
     }
 }
 
+@media (max-width: 768px) {
+.content_head {
+    height: 200px;
+
+    .overlay {
+        h1 {
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+}
+}
+
 .thum1{
     background-image: url(../img/product-thumnail1.jpg);
 }
@@ -1492,11 +1505,6 @@ article {
     background-image: url(../img/product-thumnail2.png);
 }
 
-@media (max-width: 768px) {
-    .content_head{
-        height: 200px;
-    }
-}
 // content_head ------------------------
 
 // material-text ---------------------
@@ -1645,6 +1653,14 @@ article {
     .material_article{
         box-shadow: none;
         padding: 0 15px;
+
+        h2{
+            font-size: 22px;
+        }
+
+        h4{
+            font-size: 18px;
+        }
     }
 }
 // material_article ----------------------

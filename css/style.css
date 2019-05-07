@@ -1230,18 +1230,22 @@ article section .cont_btn_mas_dets:hover::after {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .content_head {
+    height: 200px;
+  }
+  .content_head .overlay h1 {
+    color: #fff;
+    font-size: 24px;
+  }
+}
+
 .thum1 {
   background-image: url(../img/product-thumnail1.jpg);
 }
 
 .thum2 {
   background-image: url(../img/product-thumnail2.png);
-}
-
-@media (max-width: 768px) {
-  .content_head {
-    height: 200px;
-  }
 }
 
 .material_text {
@@ -1376,5 +1380,11 @@ article section .cont_btn_mas_dets:hover::after {
   .material_article {
     box-shadow: none;
     padding: 0 15px;
+  }
+  .material_article h2 {
+    font-size: 22px;
+  }
+  .material_article h4 {
+    font-size: 18px;
   }
 }
