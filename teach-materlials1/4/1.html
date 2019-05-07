@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- goole fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP" rel="stylesheet">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <title>近もく会 | Products | Show</title>
 
@@ -37,28 +37,28 @@
 </head>
 
 <body>
-
     <!-- header -->
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="logomark" href="#">
-            <img src="../../img/kinmoku-logo.svg" alt="" class="logo">
+        <a class="logomark" href="index.html">
+            <img src="../../img/404_logo.png" alt="" class="logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-ellipsis-h"></i>
         </button>
 
         <div class="collapse navbar-collapse nav-list" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="../../index.html">Home</a>
-                </li>
                 <li class="nav-item text-uppercase active">
-                    <a class="nav-link" href="../../index2.html">products</a>
+                    <a class="nav-link" href="../../index.html">products</a>
                 </li>
                 <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="../../user.html">
+                    <a class="nav-link" href="../../index2.html">about</a>
+                </li>
+                <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="user.html">
                         <img src="../../img/sample-icon.jpg" alt="">
                     </a>
                 </li>
@@ -67,227 +67,109 @@
     </nav>
     <!-- header -->
 
+    <!--content_head ---------------------------------- -->
 
-    <!-- main-content -->
+    <div class="content_head thum2" id="1">
+        <div class="overlay align-items-center">
+            <h1>icons部分を完成させよう</h1>
+        </div>
+    </div>
+
+    <!--content_head ---------------------------------- -->
+
+    <!-- main -->
     <main>
-        <div class="container">
+        <div class="container" data-sticky_parent>
+            <div class="row">
+                <div class=" col-lg-7 material_article">
+                    <h2>icon部分の構成</h2>
+                    <p>ここも簡単です。header部分とほぼ構成は同じです。<br>アイコンの大きさはナビげションバーのアイコン同様 <span>height22px</span>
+                        します。ここまでで理解できるように基本的には1つのUIで使用する <span>アイコンは同じ大きさ</span> にしましょう。統一感も出てUIとして引き締まります。</p>
+                    <img src="../img/8-img1.png" alt="icon部分の構成" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑ここまでで理解できるように基本的には１つのUIで使用するアイコンは同じ大きさにしましょう。
+                    </div>
 
-            <!-- title -->
-            <div class="title-text">
-                <h2>About usセクションのレスポンシブ</h2>
+                    <p>リボンのアイコンのみを右に寄せ、 <span>左右に12pxづつの余白</span> をつけます。画像部分との余白も <span>12px</span>
+                        にします。こうみてみるとheader部分と同じ構成だということがわかります。</p>
+                    <img src="../img/8-img2.png" alt="icon部分の構成" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑画像部分との余白も12pxにします。</div>
+
+                    <p>左のアイコンの間隔はそれぞれ <span>17pxづつ</span>
+                        にしましょう。もしもここの間隔を先ほどと同じようにするととても <span>窮屈</span>
+                        な感じになります。そうするといいねやコメントに行く際に指が<span>誤って</span>意図したアイコンとは別のアイコンに触れてしまう可能性があるので、
+                        <span>少し大きな余白</span>
+                        を設ける必要がありました。
+                    </p>
+                    <img src="../img/8-img3.png" alt="icon部分の構成" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑ページにもアイコンにも十分な間隔が重要です。</div>
+
+                    <p>左右の余白用の図形は消さずに残しておきましょう。この後のテキストの部分も同じように左右の余白をつけるので、それが終わってから消した方が良いです。</p>
+                    <img src="../img/8-img4.png" alt="icon部分の構成" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑現状です。</div>
+
+                    <div class="primary_btn box-shadow-blue align-item">
+                        <a data-toggle="modal" data-target="#basicExampleModal">
+                            次に進む
+                        </a>
+                    </div>
+                </div>
+
+                <div class="material_chapter col-lg-5">
+                    <div class="material_items" data-sticky_column>
+                        <ul>
+                            <li class="chapter-show-list scroll">
+                                <a class="chapter_circle"></a>
+                                <a href="#1">1：TOP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- title -->
+            <!-- material-list -->
 
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="basicExampleModal" aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content box-shadow-blue">
 
-            <!-- article -->
-            <article>
-                <!-- article thumnail -->
-                <div class="article-product-thum">
-                    <img src="../img/スライド5 – 1.png" class="img-fluid" alt="">
-                </div>
-                <!-- article thumnail -->
-
-                <!-- article-contents -->
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <section>
-                            <h3>レスポンシブ</h3>
-                            <p>このセクションもrowクラスを用いているのでやることはほとんどありませんがしっかりとディテールをこだわっていきましょう。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <img src="../img/スライド5 – 1.png" alt="" class="img-fluid slides-item1">
-                                    <div id="slides-modal1" class="iziModal" data-izimodal-title="レスポンシブ">
-                                        <img src="../img/スライド5 – 1.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
+                        <!-- modal body content -->
+                        <div class="modal-body">
+                            <div class="text-center">
+                                <img src="../../img/success.svg" alt="" class="img-fluid box-shadow-blue">
+                                <h4>Good job!!!</h4>
+                                <h6>このページも簡単でしたか？あとはテキスト部分を完成させればコンプリートです！</h6>
                             </div>
-                        </section>
-
-                        <section>
-                            <p>html部分はgridの部分に[ <span>col-md-◯</span> ]クラスがついていると思いますが[ <span>col-lg-◯</span>
-                                ]クラスに変更してさらに[ <span>col-md-6</span> ]クラスを追記しましょう。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/スライド5 – 1 - 2.png" class="d-block w-100 slides-item2"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/スライド5 - 1 – 3.png" class="d-block w-100 slides-item3"
-                                                    alt="...">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-
-                                    <div id="slides-modal2" class="iziModal" data-izimodal-title="現状">
-                                        <img src="../img/スライド5 – 1 - 2.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div id="slides-modal3" class="iziModal" data-izimodal-title="[col-md-6]クラスを追記しましょう。">
-                                        <img src="../img/スライド5 - 1 – 3.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <p>画像部分のタグにはさらに[ <span>home-about-img</span> ]クラスを追記してください。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <img src="../img/スライド5 - 1 – 4.png" alt="" class="img-fluid slides-item4">
-                                    <div id="slides-modal4" class="iziModal" data-izimodal-title="[home-about-img]クラスを追記してください。">
-                                        <img src="../img/スライド5 - 1 – 4.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <p>CSSは <span>767px以下</span> でのレスポンシブを作成していきます。と言ってもそれぞれの間隔の調整だけです。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <div id="carouselexample2" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselexample2" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselexample2" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/スライド5 - 1 – 5.png" class="d-block w-100 slides-item6"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/スライド5 – 1 - 6.png" class="d-block w-100 slides-item7"
-                                                    alt="...">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselexample2" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselexample2" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-
-                                    <div id="slides-modal6" class="iziModal" data-izimodal-title="767px以下でのレスポンシブ">
-                                        <img src="../img/スライド5 - 1 – 5.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div id="slides-modal7" class="iziModal">
-                                        <img src="../img/スライド5 – 1 - 6.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <p>最後にh1タグがスマホ版だと改行されるので <span>430px以下</span> で <span>font-size</span> を変更したら完成です！!</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <div id="carouselexample3" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselexample3" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselexample3" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/スライド5 – 1 - 7.png" class="d-block w-100 slides-item8"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/スライド5 - 1 - 8.png" class="d-block w-100 slides-item9"
-                                                    alt="...">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselexample3" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselexample3" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-
-                                    <div id="slides-modal8" class="iziModal" data-izimodal-title="430px以下でfont-sizeを変更">
-                                        <img src="../img/スライド5 – 1 - 7.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div id="slides-modal9" class="iziModal">
-                                        <img src="../img/スライド5 - 1 - 8.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="cont_btn_mas_dets" data-toggle="modal" data-target="#basicExampleModal">
-                                完了した
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <!-- article-contents -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="basicExampleModal"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                            <!-- modal header content -->
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="basicExampleModal">About usセクションのレスポンシブ</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <!-- modal header content -->
-
-                            <!-- modal body content -->
-                            <div class="modal-body">
-                                <div class="text-center">
-                                    <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-                                    <p>
-                                        このセクションのように画像とテキストの２つの絡む構成のレスポンシブ化は先に画像、後にテキストです。ですが色々なデザインをみて自分でそのデザインに最適な方を選択しましょう。
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- modal body content -->
-
-                            <!-- modal footer content -->
-                            <div class="modal-footer">
-                                <a href="../../index4.html" class="btn cont_btn_mas_dets">教材を確認する</a>
-                                <a href="../5/1.html" class="btn cont_btn_mas_dets_second">次に進む</a>
-                            </div>
-                            <!-- modal footer content -->
                         </div>
+                        <!-- modal body content -->
+
+                        <!-- modal footer content -->
+                        <div class="modal-footer">
+                            <div class="primary_btn box-shadow-blue align-item">
+                                <a href="../5/1.html">
+                                    次に進む
+                                </a>
+                            </div>
+                            <div class="primary_btn second box-shadow-blue align-item">
+                                <a href="../../index4.html">
+                                    教材を確認する
+                                </a>
+                            </div>
+                        </div>
+                        <!-- modal footer content -->
                     </div>
                 </div>
-                <!-- Modal -->
-
-            </article>
-
-            <!-- article -->
+            </div>
+            <!-- Modal -->
 
         </div>
     </main>
-    <!-- main-content -->
+    <!-- main -->
+
 
 
     <!-- footer -->
@@ -309,7 +191,6 @@
             <div class="footer-links">
                 <a href="#">近もく会</a>
                 <p>異なる"言語"で、共に作る"空想"</p>
-
                 <p class="mt-2">近もく会 &copy; 2018</p>
             </div>
 
@@ -320,12 +201,25 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="../../js/sticky-kit.js"></script>
     <script src="../../js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            return $("[data-sticky_column]").stick_in_parent({
+                parent: "[data-sticky_parent]"
+            });
+        });
+    </script>
 </body>
+
 
 </html>

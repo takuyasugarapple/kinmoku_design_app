@@ -82,32 +82,40 @@
         <div class="container" data-sticky_parent>
             <div class="row">
                 <div class=" col-lg-7 material_article">
-                    <h2>Adobe XDにパーツを整理する</h2>
-                    <p>今回は <span>iPhone8</span> でのUIデザインを作りましょう。そしてアートボードをはじめ、アイコンやロゴなどを管理して <span>UIデザインを作りやすい環境</span>
-                        を作りましょう。</p>
-                    <img src="../img/3-img1.png" alt="AdobeXDにパーツを整理する" class="img-fluid box-shadow-blue">
+                    <h2>コンポーネントを当てはめる</h2>
+                    <h4 id="2">コンポーネントをうまく活用しよう</h4>
+                    <p>iOSのコンポーネントをうまく活用してUIデザインをスピーディーにしましょう。</p>
+                    <img src="../img/4-img1.png" alt="コンポーネントをうまく活用しよう" class="img-fluid box-shadow-blue">
                     <div class="img_text">
-                        ↑必要な時に必要なパーツが揃っており、ページ移動を最小限に抑えるものです。</a>
+                        ↑コンポーネントを利用するとUIデザインが簡単です。</a>
                     </div>
 
-                    <h4 id="2">1つのファイルに必要なパーツをまとめる</h4>
-                    <p>まずAdobe XDで新しいファイルを作成し、iPone6/78のアートボードを作成します。</p>
-                    <img src="../img/3-img2.png" alt="AdobeXDにパーツを整理する" class="img-fluid box-shadow-blue">
+                    <p>まず「 <span>UIElements+DesignTemplates+Guides-iPhone8</span> 」ファイルから引用してきた「 <span>ステータスバー</span> 」「
+                        <span>ナビゲーションバー</span> 」を作成したアートボードに配置しましょう。 <span>シンボルリンクとグループ化は解除</span> しておいてください。</p>
+                    <img src="../img/4-img2.png" alt="コンポーネントをうまく活用しよう" class="img-fluid box-shadow-blue">
                     <div class="img_text">
-                        ↑ipone6/78のアートボードを作成します。
+                        ↑ステータスバーのグループ解除しないのは干渉する必要がないからです。
                     </div>
 
-                    <p>次にダウンロードしたアイコンを読み込みましょう。読み込むファイルは <span>aiファイル</span> です。上部から「ファイル」→「読み込み」でファイルを読み込みましょう。読み込んだら <span>グループ化とロックを解除</span> して1つ1つのパーツを使えるようにしましょう。</p>
-
-                    <p>最後に <span>iOSのUIキット</span> を開きます。まず「 <span>UI Elements + Desgin Templates + Guides</span> 」のフォルダを開きます。「 <span>UIElements+DesignTemplates+Guides-iPhone8</span> 」ファイルを開きましょう。</p>
-                    <img src="../img/3-img3.png" alt="AdobeXDにパーツを整理する" class="img-fluid box-shadow-blue">
+                    <p>次にタブバーなんですが <span>2つ</span>
+                        用意してもらいました。Instagramのタブバーには文字がなく、アイコンだけです。そのため <span>heightは45px</span> でアイコンは星の配置が適しています。そのため少し
+                        <span>アレンジ</span> する必要があります。
+                    </p>
+                    <img src="../img/4-img3.png" alt="コンポーネントをうまく活用しよう" class="img-fluid box-shadow-blue">
                     <div class="img_text">
-                        ↑UIElements+DesignTemplates+Guides-iPhone8</div>
+                        ↑アイコンだけが必要です。</div>
 
-                    <p>今回は必要なパーツだけ用いましょう。 <span>「ステータスバー」「ナビゲーションバー」「タブバー」×2</span> を用いましょう(なぜタブバーが２つ必要かは後ほど説明します)。</p>
-                    <img src="../img/3-img4.png" alt="Instagramに必要な要素" class="img-fluid box-shadow-blue">
+                    <p>まず2つとも <span>シンボルリンクとグループ化を解除</span> します。次に <span>背景部分と境界線をタブバーに配置</span>
+                        します。中のアイコンは消してもらって構いません。</p>
+                    <img src="../img/4-img4.png" alt="コンポーネントをうまく活用しよう" class="img-fluid box-shadow-blue">
                     <div class="img_text">
-                        ↑「ステータスバー」「ナビゲーションバー」「タブバー」×2</a>
+                        ↑背景部分と境界線をタブバーに配置します。</a>
+                    </div>
+
+                    <p>次に星のアイコンのみを5つ上下中央揃えで配置させましょう。これでコンポーネントの配置は完成です。</p>
+                    <img src="../img/4-img5.png" alt="コンポーネントをうまく活用しよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑これでコンポーネントの配置は完成です。</a>
                     </div>
 
                     <div class="primary_btn box-shadow-blue align-item">
@@ -128,7 +136,7 @@
                         <ul>
                             <li class="chapter-show-list scroll">
                                 <a class="chapter_circle"></a>
-                                <a href="#2">2：必要なパーツをまとめる</a>
+                                <a href="#2">2：コンポーネントをうまく活用しよう</a>
                             </li>
                         </ul>
                     </div>
@@ -145,9 +153,10 @@
                         <!-- modal body content -->
                         <div class="modal-body">
                             <div class="text-center">
-                                <img src="../../img/success.svg" alt="404の成功したよってアイコン" class="img-fluid box-shadow-blue">
+                                <img src="../../img/success.svg" alt="404の成功したよってアイコン"
+                                    class="img-fluid box-shadow-blue">
                                 <h4>Good job!!!</h4>
-                                <h6>これで必要な準備は完了です。早速コンポーネントの活用を学ん営きましょう！</h6>
+                                <h6>これでコンポーネントの配置は完成です。少しタブバーの完成形が見えてきませんか？次はInstagramのアイコンを配置させてみましょう。</h6>
                             </div>
                         </div>
                         <!-- modal body content -->
@@ -155,7 +164,7 @@
                         <!-- modal footer content -->
                         <div class="modal-footer">
                             <div class="primary_btn box-shadow-blue align-item">
-                                <a href="../1/1.html">
+                                <a href="2.html">
                                     次に進む
                                 </a>
                             </div>

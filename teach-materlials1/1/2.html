@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- goole fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Noto+Sans+JP" rel="stylesheet">
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
     <title>近もく会 | Products | Show</title>
 
@@ -37,28 +37,28 @@
 </head>
 
 <body>
-
     <!-- header -->
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="logomark" href="#">
-            <img src="../../img/kinmoku-logo.svg" alt="" class="logo">
+        <a class="logomark" href="index.html">
+            <img src="../../img/404_logo.png" alt="" class="logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-ellipsis-h"></i>
         </button>
 
         <div class="collapse navbar-collapse nav-list" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="../../index.html">Home</a>
-                </li>
                 <li class="nav-item text-uppercase active">
-                    <a class="nav-link" href="../../index2.html">products</a>
+                    <a class="nav-link" href="../../index.html">products</a>
                 </li>
                 <li class="nav-item text-uppercase">
-                    <a class="nav-link" href="../../user.html">
+                    <a class="nav-link" href="../../index2.html">about</a>
+                </li>
+                <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="user.html">
                         <img src="../../img/sample-icon.jpg" alt="">
                     </a>
                 </li>
@@ -67,166 +67,135 @@
     </nav>
     <!-- header -->
 
+    <!--content_head ---------------------------------- -->
 
-    <!-- main-content -->
+    <div class="content_head thum2" id="1">
+        <div class="overlay align-items-center">
+            <h1>コンポーネントを当てはめる</h1>
+        </div>
+    </div>
+
+    <!--content_head ---------------------------------- -->
+
+    <!-- main -->
     <main>
-        <div class="container">
+        <div class="container" data-sticky_parent>
+            <div class="row">
+                <div class=" col-lg-7 material_article">
+                    <h2>バーのパーツを埋め込む</h2>
+                    <h4 id="2">ナビゲーションバーを完成させよう</h4>
+                    <p>コンポーネントが配置し終わったらあとは必要なパーツを当てはめるだけです。まずtitleの部分にロゴを <span>height29px</span> で配置します。</p>
+                    <img src="../img/5-img1.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑titleの部分にロゴをheight29pxで配置します。</a>
+                    </div>
 
-            <!-- title -->
-            <div class="title-text">
-                <h2>プログラミング×デザイン「設計を観察してみよう」</h2>
+                    <p>次に飛行機ののアイコンとカメラのアイコンをそれぞれ <span>heightを22px</span> にして配置すれば完成です。 <br> 一応Instagramのアイコンの色は
+                        <span>#262626</span> なのでこれから使用する <span>アイコンの色は変更</span> しておきましょう。</p>
+                    <img src="../img/5-img2.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑これから使用するアイコンの色は変更しておきましょう。<span>#262626</span>
+                    </div>
+
+                    <h4 id="3">タブバーを完成させる</h4>
+                    <p>タブバーもナビゲーションバーと同じように位置に気をつけて、それぞれのアイコンの <span>widthを22px</span> にして配置していきましょう。</p>
+                    <img src="../img/5-img3.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑それぞれのアイコンのwidthを22pxにして配置していきましょう。</div>
+
+                    <p>ここでポイントがあり、基本的にアプリには <span>アクティブ状態</span> 、つまり今閲覧しているページのアイコンは他のアイコンと <span>差別化</span>
+                        する必要があります。そのためhomeのアイコンは <span>塗りつぶし</span> のものを使用しましょう。</p>
+                    <img src="../img/5-img4.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑アクティブ状態の時は塗りつぶし以外に、色を変えるや線を太くするなどがあります。</a>
+                    </div>
+
+                    <p>また、ユーザーアイコンには自分ですきな画像を当てはめましょう。好きな画像をコピーしておいて、丸い図形に右クリックの「 <span>アピアランスをペースト</span> 」で配置できます。</p>
+                    <img src="../img/5-img5.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑アピアランスをペースト
+                    </div>
+
+                    <p>最後にこれから作るパーツはそれぞれでグループ化しておきましょう。そうすると移動や再利用が簡単になります。</p>
+                    <img src="../img/5-img6.png" alt="ナビゲーションバーを完成させよう" class="img-fluid box-shadow-blue">
+                    <div class="img_text">
+                        ↑それぞれグループ化しておきましょう。
+                    </div>
+
+                    <p>この作り方さえ覚えておけば次からiOSアプリのUIデザインを作る時に再利用して使えるのでとても便利です。</p>
+
+                    <div class="primary_btn box-shadow-blue align-item">
+                        <a data-toggle="modal" data-target="#basicExampleModal">
+                            次に進む
+                        </a>
+                    </div>
+                </div>
+
+                <div class="material_chapter col-lg-5">
+                    <div class="material_items" data-sticky_column>
+                        <ul>
+                            <li class="chapter-show-list scroll">
+                                <a class="chapter_circle"></a>
+                                <a href="#1">1：TOP</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="chapter-show-list scroll">
+                                <a class="chapter_circle"></a>
+                                <a href="#2">2：ナビゲーションバーを完成させよう</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="chapter-show-list scroll">
+                                <a class="chapter_circle"></a>
+                                <a href="#3">3：タブバーを完成させる</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <!-- title -->
+            <!-- material-list -->
 
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="basicExampleModal" aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content box-shadow-blue">
 
-            <!-- article -->
-            <article>
-                <!-- article thumnail -->
-                <div class="article-product-thum">
-                    <img src="../img/スライド2 – 2 - 2.png" class="img-fluid" alt="">
-                </div>
-                <!-- article thumnail -->
-
-                <!-- article-contents -->
-                <div class="row align-items-center">
-                    <div class="col-lg-9">
-                        <section>
-                            <h3>Bootstrap</h3>
-                            <p>まず[ <span>bg-light</span> ]クラスを消しましょう。これで背景色がなくなります。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/スライド2 – 2.png" class="d-block w-100 slides-item1" alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/スライド2 – 2 - 2.png" class="d-block w-100 slides-item2"
-                                                    alt="...">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-
-                                    <div id="slides-modal1" class="iziModal" data-izimodal-title="Bootstrap"
-                                        data-izimodal-subtitle="まず[bg-light]クラスを消しましょう。">
-                                        <img src="../img/スライド2 – 2.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div id="slides-modal2" class="iziModal" data-izimodal-title="Bootstrap"
-                                        data-izimodal-subtitle="これで背景色がなくなります。">
-                                        <img src="../img/スライド2 – 2 - 2.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
+                        <!-- modal body content -->
+                        <div class="modal-body">
+                            <div class="text-center">
+                                <img src="../../img/success.svg" alt="404の成功したよってアイコン"
+                                    class="img-fluid box-shadow-blue">
+                                <h4>Good job!!!</h4>
+                                <h6>UIデザインを作成する際にこのように、色々再利用できるパーツをストックしておきましょう。</h6>
                             </div>
-                        </section>
-
-                        <section>
-                            <p>そして今は[ <span>navbar-expand-lg</span> ]クラスのおかげで992px以下で <span>ハンバーガーメニュー</span>
-                                が表示されます。ですが768px以下で表示するようにします。[ <span>navbar-expand-lg</span> ]クラスを[ <span>navbar-expand-md</span>
-                                ]クラスにしましょう。これで768px以下でハンバーガーメニューが表示されます。</p>
-                            <div class="article-product-img-contents">
-                                <div class="article-img">
-                                    <div id="carouselexample1" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselexample1" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselexample1" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/スライド2 – 2 - 3.png" class="d-block w-100 slides-item3"
-                                                    alt="...">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/スライド2 – 2 - 4.png" class="d-block w-100 slides-item4"
-                                                    alt="...">
-                                            </div>
-                                        </div>
-                                        <a class="carousel-control-prev" href="#carouselexample1" role="button"
-                                            data-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="carousel-control-next" href="#carouselexample1" role="button"
-                                            data-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </div>
-
-                                    <div id="slides-modal3" class="iziModal" data-izimodal-title="ハンバーガーメニュー"
-                                        data-izimodal-subtitle="768px以下で表示するようにします。">
-                                        <img src="../img/スライド2 – 2 - 3.png" alt="" class="img-fluid">
-                                    </div>
-                                    <div id="slides-modal4" class="iziModal" data-izimodal-title="ハンバーガーメニュー"
-                                        data-izimodal-subtitle="[navbar-expand-lg]クラスを[navbar-expand-md]クラスにしましょう。">
-                                        <img src="../img/スライド2 – 2 - 4.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="cont_btn_mas_dets" data-toggle="modal" data-target="#basicExampleModal">
-                                完了した
-                            </a>
-                        </section>
-                    </div>
-                </div>
-                <!-- article-contents -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="basicExampleModal"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                            <!-- modal header content -->
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="basicExampleModal">ヘッダーをレスポンシブ化</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <!-- modal header content -->
-
-                            <!-- modal body content -->
-                            <div class="modal-body">
-                                <div class="text-center">
-                                    <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
-                                    <p>
-                                        ハンバーガーメニューはウェブデザインで多く使われる手法なので表示させる方法や、アレンジの方法などをいくつか覚えておきましょう。
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- modal body content -->
-
-                            <!-- modal footer content -->
-                            <div class="modal-footer">
-                                <a href="../../index4.html" class="btn cont_btn_mas_dets">教材を確認する</a>
-                                <a href="../1/3.html" class="btn cont_btn_mas_dets_second">次に進む</a>
-                            </div>
-                            <!-- modal footer content -->
                         </div>
+                        <!-- modal body content -->
+
+                        <!-- modal footer content -->
+                        <div class="modal-footer">
+                            <div class="primary_btn box-shadow-blue align-item">
+                                <a href="../2/1.html">
+                                    次に進む
+                                </a>
+                            </div>
+                            <div class="primary_btn second box-shadow-blue align-item">
+                                <a href="../../index4.html">
+                                    教材を確認する
+                                </a>
+                            </div>
+                        </div>
+                        <!-- modal footer content -->
                     </div>
                 </div>
-                <!-- Modal -->
-
-            </article>
-
-            <!-- article -->
+            </div>
+            <!-- Modal -->
 
         </div>
     </main>
-    <!-- main-content -->
+    <!-- main -->
+
 
 
     <!-- footer -->
@@ -248,7 +217,6 @@
             <div class="footer-links">
                 <a href="#">近もく会</a>
                 <p>異なる"言語"で、共に作る"空想"</p>
-
                 <p class="mt-2">近もく会 &copy; 2018</p>
             </div>
 
@@ -259,12 +227,25 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="../../js/sticky-kit.js"></script>
     <script src="../../js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            return $("[data-sticky_column]").stick_in_parent({
+                parent: "[data-sticky_parent]"
+            });
+        });
+    </script>
 </body>
+
 
 </html>
