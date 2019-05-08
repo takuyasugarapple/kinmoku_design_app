@@ -43,7 +43,7 @@
 </head>
 
 <body>
-
+    <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="logomark" href="index.html">
             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
@@ -75,53 +75,62 @@
             </ul>
         </div>
     </nav>
+    <!-- header -->
 
-
-    <!-- main-content -->
     <main>
         <div class="container">
 
             <!-- title -->
             <div class="title-text">
-                <h1>Products</h2>
-                    <p>
-                        学べるコンテンツはこちらです
-                    </p>
+                <h2>ログインする</h2>
             </div>
             <!-- title -->
 
-            <!-- contents----------------------------------- -->
+            <!-- signup -->
+            <div class="signup">
+                <div class="row justify-content-md-center align-items-center">
+                    <div class="signup_form col-md-6">
+                        <form method="POST" id="register_form">
+                            <div class="form_group">
+                                <input class="textbox_mail" type="email" name="email" id="your_email" />
+                                <label class="label_mail">Email</label>
+                            </div>
+                            <div class="form_group">
+                                <input class="textbox_pass" type="password" name="password" id="your_password" />
+                                <label class="label_pass">パスワード</label>
+                            </div>
+                            <div class="form_group mt-4">
+                                <label class="agree">ログイン状態を保持する
+                                    <input type="checkbox" name="remember" id="remember" />
+                                    <div class="agree_cbox"></div>
+                                </label>
+                            </div>
+                            <div class="form_group mt-4 form_pass">
+                                パスワードを忘れた方は<a href="#">こちら</a>
+                            </div>
+                            <input class="primary_btn box-shadow-blue mt-4" type="submit" name="signin" id="signin"
+                                value="ログイン" />
 
-            <div class="product_box box-shadow-blue">
-                <div class="row">
-                    <div class="col-md-4 product_img">
-                        <a href="index4.html">
-                            <span class="thum2"></span>
-                        </a>
+                            </input>
+                        </form>
+
+                        <div class="social_login align-items-center mt-3">
+                            <span>または</span>
+                            <ul class="social_icon">
+                                <li><a class="fb" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="gg" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-md-8 product_item">
-                        <h4>画像をメインとしたUI</h4>
-                        <p>今回はデザイナーのポートフォリオサイトを作成します。まずデザインを作成する前にユーザー体験(UX)を設計します。ユーザーを想定し、実際にデザイン設計を行なってみましょう！</p>
-                        <span><i class="far fa-clock"></i> 学習時間 3 時間</span>
-                        <div class="primary_btn box-shadow-blue align-item">
-                            <a href="teach-materlials1/0/1.html">
-                                さっそく始める！
-                            </a>
-                        </div>
-                        <div class="primary_btn second box-shadow-blue align-item">
-                            <a href="index4.html">
-                                教材を確認する
-                            </a>
-                        </div>
+                    <div class="signup_img col-md-6">
+                        <img src="img/signin-image.jpg" alt="sing up image">
+                        <a href="signup.html" class="img_link">アカウントをお持ちでないですか？</a>
                     </div>
                 </div>
             </div>
-
-            <!-- contents----------------------------------- -->
+            <!-- signup -->
         </div>
     </main>
-    <!-- main-content -->
-
 
     <!-- footer -->
     <footer id="footer">
@@ -168,6 +177,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
