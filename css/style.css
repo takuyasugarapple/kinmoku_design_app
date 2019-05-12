@@ -3,6 +3,10 @@
   color: #fff;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Lato', 'Noto Sans JP', sans-serif;
   background: #fefefe;
@@ -1076,5 +1080,163 @@ article section .cont_btn_mas_dets:hover::after {
   }
   .profile_img span {
     border-radius: 5px 5px 0 0;
+  }
+}
+
+@keyframes rocket-movement {
+  100% {
+    transform: translate(-700px, -600px);
+  }
+}
+
+@keyframes spin-earth {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    transition: transform 20s;
+  }
+}
+
+@keyframes glow-star {
+  40% {
+    -webkit-opacity: 0.3;
+    opacity: 0.3;
+  }
+  90%,
+  100% {
+    -webkit-opacity: 1;
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 999999px;
+  }
+}
+
+.bg_about {
+  background: url(../img/bg-about.svg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left top;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  user-select: none;
+}
+
+.bg_about .navbar {
+  background: transparent;
+  border: none;
+}
+
+.bg_about .stars {
+  background: url(../img/star.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.bg_about .about_content {
+  width: 100%;
+  padding: 17% 5% 10% 5%;
+  text-align: center;
+}
+
+.bg_about .about_content .img_404 {
+  width: 300px;
+  position: relative;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.bg_about .about_text {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.bg_about .about_text h2 {
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.bg_about .about_text h5 {
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.bg_about .objects img {
+  z-index: 90;
+  pointer-events: none;
+}
+
+.bg_about .objects .rocket_404 {
+  width: 130px;
+  position: absolute;
+  transform: translateX(-50px);
+  top: 75%;
+  right: -5%;
+  pointer-events: none;
+  animation: rocket-movement 100s linear infinite both running;
+}
+
+.bg_about .objects .earth_404 {
+  position: absolute;
+  top: 20%;
+  width: 130px;
+  left: 15%;
+  animation: spin-earth 50s infinite linear both;
+}
+
+.bg_about .objects .moon_404 {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  width: 70px;
+  transform: rotate(0deg);
+  animation: spin-earth 40s infinite linear both;
+}
+
+.bg_about .bright_stars .star {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  opacity: 0.3;
+  will-change: opacity;
+}
+
+.bg_about .bright_stars .star:nth-child(1) {
+  top: 80%;
+  left: 25%;
+  animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+
+.bg_about .bright_stars .star:nth-child(2) {
+  top: 20%;
+  left: 40%;
+  animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+
+.bg_about .bright_stars .star:nth-child(3) {
+  top: 25%;
+  right: 25%;
+  animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+
+.bg_about .bright_stars .star:nth-child(4) {
+  top: 75%;
+  left: 80%;
+  animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+
+.bg_about .bright_stars .star:nth-child(5) {
+  top: 90%;
+  left: 50%;
+  animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+@media only screen and (max-width: 600px) {
+  .about_content {
+    padding-top: 25%;
   }
 }
