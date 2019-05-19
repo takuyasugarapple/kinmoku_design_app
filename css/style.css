@@ -1327,6 +1327,28 @@ article section .cont_btn_mas_dets:hover::after {
   border-bottom: 1px solid #4288FB;
 }
 
+.profile .profile_item textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 5px 25px;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 40px;
+  border-left: 6px solid #4288FB;
+  line-height: 2rem;
+}
+
+.profile .profile_item textarea:hover {
+  border-bottom: 1px solid #4288FB;
+}
+
 @media (max-width: 768px) {
   .profile {
     padding: 0;
@@ -1397,9 +1419,9 @@ article section .cont_btn_mas_dets:hover::after {
 
 .post_btn {
   bottom: 32px;
-  right: 32px;
-  width: 120px;
-  height: 120px;
+  right: 42px;
+  width: 100px;
+  height: 100px;
   position: fixed;
   z-index: 1000;
   border-radius: 50%;
@@ -1409,12 +1431,12 @@ article section .cont_btn_mas_dets:hover::after {
 }
 
 .post_btn h6 {
-  margin: 22px 0 0;
+  margin: 19px 0 0;
 }
 
 .post_btn i {
-  margin: 8px 0 0;
-  font-size: 54px;
+  margin: 7px 0 0;
+  font-size: 44px;
 }
 
 @media (max-width: 768px) {
@@ -1435,6 +1457,7 @@ article section .cont_btn_mas_dets:hover::after {
 
 .feed {
   padding: 40px;
+  margin-bottom: 50px;
 }
 
 .feed .feed_img {
@@ -1446,6 +1469,7 @@ article section .cont_btn_mas_dets:hover::after {
   border: 1px solid #e6e6e6;
   width: 30%;
   height: 100px;
+  border-radius: 2px;
 }
 
 .feed .feed_img img:nth-child(1) {
@@ -1471,10 +1495,25 @@ article section .cont_btn_mas_dets:hover::after {
   border-radius: 50%;
 }
 
+.feed .feed_content .feed_user img:hover {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
 .feed .feed_content .feed_user h5 {
   padding-left: 20px;
   letter-spacing: 1px;
   margin-bottom: 0;
+  width: 100%;
+}
+
+.feed .feed_content .feed_user h5 a {
+  width: 100%;
+  display: block;
+}
+
+.feed .feed_content .feed_user h5 a:hover {
+  opacity: 0.6;
 }
 
 .feed .feed_content .feed_url {
@@ -1486,8 +1525,33 @@ article section .cont_btn_mas_dets:hover::after {
   color: #4288FB;
   text-decoration-line: underline;
   word-wrap: break-word;
+  display: block;
+}
+
+.feed .feed_content .feed_url a:hover {
+  text-decoration: none;
 }
 
 .feed .feed_content .feed_comment p {
   line-height: 2rem;
+}
+
+.feed .primary_btn:last-child {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .feed {
+    padding: 20px;
+  }
+  .feed .feed_img {
+    margin-bottom: 30px;
+  }
+  .feed .feed_img img:nth-child(2), .feed .feed_img img:nth-child(3) {
+    margin-right: 3.9%;
+  }
+  .feed .primary_btn:last-child {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
