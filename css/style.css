@@ -553,6 +553,65 @@ article section .cont_btn_mas_dets:hover::after {
   margin-bottom: 10px;
 }
 
+.modal .modal-dialog .modal-content .modal-body .share_modal {
+  position: relative;
+}
+
+.modal .modal-dialog .modal-content .modal-body .share_modal .share_text {
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.modal .modal-dialog .modal-content .modal-body .share_modal .share_text .share_label {
+  line-height: 1.3;
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+}
+
+.modal .modal-dialog .modal-content .modal-body .share_modal .share_text .share_label input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #1d3256;
+  display: block;
+  height: 32px;
+  padding: 4px;
+  padding-left: 41px;
+  width: 100%;
+}
+
+.modal .modal-dialog .modal-content .modal-body .share_modal .share_btn {
+  cursor: pointer;
+  left: 1px;
+  top: 1px;
+  width: 34px;
+  background: #4288FB;
+  border: 0 solid #ccc;
+  border-radius: 2px 0 0 2px;
+  border-right-width: 1px;
+  bottom: 1px;
+  display: block;
+  font-weight: 400;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 7px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.modal .modal-dialog .modal-content .modal-body .share_modal .share_btn i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+  height: 16px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 16px;
+}
+
 .modal .modal-dialog .modal-content .modal-footer {
   border-top: none;
   padding: 0 40px 50px;
@@ -570,6 +629,32 @@ article section .cont_btn_mas_dets:hover::after {
 
 .modal .modal-dialog .modal-content .modal-footer > :not(:first-child) {
   margin-left: 0;
+}
+
+.modal .modal-dialog .modal-content.modal_delete {
+  box-shadow: 0 0 40px 0 rgba(251, 66, 66, 0.1);
+}
+
+.modal .modal-dialog .modal-content.modal_delete .modal-title {
+  color: #190808;
+}
+
+.modal .modal-dialog .modal-content.modal_delete .modal-body img {
+  box-shadow: 0 0 40px 0 rgba(251, 66, 66, 0.2);
+}
+
+.modal .modal-dialog .modal-content.modal_delete .modal-body h4 {
+  color: #1d3256;
+}
+
+.modal .modal-dialog .modal-content.modal_delete .primary_btn {
+  box-shadow: 0 0 40px 0 rgba(251, 66, 66, 0.2);
+  background-color: #FB4242;
+}
+
+.modal .modal-dialog .modal-content.modal_img .modal-body img {
+  width: 100%;
+  border-radius: 0;
 }
 
 .product_box {
@@ -1248,7 +1333,7 @@ article section .cont_btn_mas_dets:hover::after {
 
 .profile {
   padding: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   box-shadow: 0 0 40px 0 rgba(66, 136, 251, 0.2);
 }
 
@@ -1460,26 +1545,86 @@ article section .cont_btn_mas_dets:hover::after {
   margin-bottom: 50px;
 }
 
+.feed.feed_new {
+  box-shadow: 0 0 40px 0 rgba(66, 136, 251, 0.2);
+}
+
 .feed .feed_img {
   display: block;
 }
 
-.feed .feed_img img {
+.feed .feed_img .zoom {
   object-fit: cover;
-  border: 1px solid #e6e6e6;
-  width: 30%;
-  height: 100px;
   border-radius: 2px;
+  display: inline-block;
 }
 
-.feed .feed_img img:nth-child(1) {
+.feed .feed_img .zoom:nth-child(1) {
   width: 100%;
   height: 250px;
   margin-bottom: 20px;
 }
 
-.feed .feed_img img:nth-child(2), .feed .feed_img img:nth-child(3) {
+.feed .feed_img .zoom:nth-child(2), .feed .feed_img .zoom:nth-child(3), .feed .feed_img .zoom:nth-child(4) {
+  width: 30%;
+  height: 100px;
+}
+
+.feed .feed_img .zoom:nth-child(2) img, .feed .feed_img .zoom:nth-child(3) img, .feed .feed_img .zoom:nth-child(4) img {
+  height: 100px;
+}
+
+.feed .feed_img .zoom:nth-child(2), .feed .feed_img .zoom:nth-child(3) {
   margin-right: 4.2%;
+}
+
+.feed .feed_img .zoom img {
+  width: 100%;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 1px solid #e6e6e6;
+  object-fit: cover;
+  height: 250px;
+}
+
+.feed .feed_img .zoom:hover {
+  opacity: 0.6;
+}
+
+.feed .feed_new_img {
+  display: block;
+  text-align: center;
+}
+
+.feed .feed_new_img img {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.feed .feed_new_img .primary_btn {
+  display: block;
+  padding: 15px 30px;
+  margin-top: 42px;
+  margin-bottom: 0;
+}
+
+.feed .feed_new_img input[type="file"] {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.feed .feed_content {
+  position: relative;
 }
 
 .feed .feed_content .feed_user {
@@ -1536,8 +1681,78 @@ article section .cont_btn_mas_dets:hover::after {
   line-height: 2rem;
 }
 
-.feed .primary_btn:last-child {
+.feed .feed_item {
+  padding-left: 25px;
+}
+
+.feed .feed_item h6 {
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.feed .feed_item .edit_feed_tbox {
+  display: block;
+  width: 100%;
+  padding: .5em 0 .5em .75em;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  background: #fff;
+  line-height: 1.2;
+  font-weight: bold;
+  border-left: 6px solid #4288FB;
+  border-bottom: 1px solid #ccc;
+}
+
+.feed .feed_item .edit_feed_tbox:hover {
+  border-bottom: 1px solid #4288FB;
+}
+
+.feed .feed_item textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: .5em 0 .5em .75em;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 40px;
+  border-left: 6px solid #4288FB;
+  line-height: 2rem;
+}
+
+.feed .feed_item textarea:hover {
+  border-bottom: 1px solid #4288FB;
+}
+
+.feed .primary_btn.second {
   margin-left: 20px;
+}
+
+.feed i {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.feed i:hover {
+  opacity: 0.6;
+}
+
+.feed .dropdown-menu .dropdown-item {
+  cursor: pointer;
+}
+
+.feed .dropdown-menu .delete {
+  color: #FB4242;
 }
 
 @media (max-width: 768px) {
@@ -1549,6 +1764,9 @@ article section .cont_btn_mas_dets:hover::after {
   }
   .feed .feed_img img:nth-child(2), .feed .feed_img img:nth-child(3) {
     margin-right: 3.9%;
+  }
+  .feed .feed_new_img {
+    margin-bottom: 30px;
   }
   .feed .primary_btn:last-child {
     margin-left: 0;
