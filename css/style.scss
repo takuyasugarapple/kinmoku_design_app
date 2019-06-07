@@ -78,7 +78,7 @@ h6 {
     box-shadow: 0 0 40px 0 rgba(66, 136, 251, 0.2);
 }
 
-button{
+button {
     padding: 15px 30px;
 }
 
@@ -517,6 +517,7 @@ article {
             a {
                 color: $maincolor;
                 border-bottom: 2px solid $maincolor;
+                word-break: break-all;
 
                 &:hover {
                     color: $maincolor;
@@ -878,6 +879,10 @@ article {
     background-image: url(../img/product-thumnail2.png);
 }
 
+.thum3 {
+    background-image: url(../img/product-thumnail3.png);
+}
+
 // content_head ------------------------
 
 // material-text ---------------------
@@ -991,6 +996,7 @@ article {
 
     p {
         line-height: 2.2em;
+        word-break: break-all;
 
         span {
             opacity: 1;
@@ -1023,6 +1029,11 @@ article {
         cursor: pointer;
         color: $maincolor;
         text-decoration-line: underline;
+        word-break: break-all;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
@@ -1898,6 +1909,7 @@ article {
         .feed_comment {
             p {
                 line-height: 2rem;
+                word-break: break-word;
 
                 // text-overflow: ellipsis;
                 // overflow : hidden;
@@ -2030,7 +2042,7 @@ article {
 
         .feed_item {
             padding-left: 15px;
-        }    
+        }
     }
 }
 

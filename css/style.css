@@ -446,6 +446,7 @@ article section p span {
 article section p a {
   color: #4288FB;
   border-bottom: 2px solid #4288FB;
+  word-break: break-all;
 }
 
 article section p a:hover {
@@ -756,6 +757,10 @@ article section .cont_btn_mas_dets:hover::after {
   background-image: url(../img/product-thumnail2.png);
 }
 
+.thum3 {
+  background-image: url(../img/product-thumnail3.png);
+}
+
 .material_text {
   margin-bottom: 40px;
 }
@@ -854,6 +859,7 @@ article section .cont_btn_mas_dets:hover::after {
 
 .material_article p {
   line-height: 2.2em;
+  word-break: break-all;
 }
 
 .material_article p span {
@@ -886,6 +892,11 @@ article section .cont_btn_mas_dets:hover::after {
   cursor: pointer;
   color: #4288FB;
   text-decoration-line: underline;
+  word-break: break-all;
+}
+
+.material_article a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -1684,6 +1695,7 @@ article section .cont_btn_mas_dets:hover::after {
 
 .feed .feed_content .feed_comment p {
   line-height: 2rem;
+  word-break: break-word;
 }
 
 .feed .feed_item {
