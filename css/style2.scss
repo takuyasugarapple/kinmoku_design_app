@@ -14,6 +14,8 @@ body {
     font-family: 'Lato', 'Noto Sans JP', sans-serif;
     background: #fefefe;
     color: $darkcolor;
+    // overflow-y: scroll;
+    // overscroll-behavior-y: none;
 }
 
 p {
@@ -166,13 +168,14 @@ main {
                         width: 2rem;
                         height: 2rem;
                         object-fit: cover;
-                        margin-right: 5px;
+                        margin: 10px 5px 10px 0;
+                        border: 2px solid $darkcolor;
                     }
                 }
             }
 
             .primary_btn {
-                margin-top: 10px;
+                margin-top: 30px;
 
                 i {
                     margin-left: 15px;
@@ -336,7 +339,7 @@ main {
                             border-radius: 10px 0 0 10px;
                         }
 
-                        &:last-child{
+                        &:last-child {
                             border-radius: 0 10px 10px 0;
                         }
                     }
@@ -345,26 +348,44 @@ main {
         }
     }
 
-    nav{
+    nav {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
         position: relative;
         border-bottom: 1px solid rgba(41, 44, 47, 0.2);
 
-        span{
+        span {
             padding: 0 5px;
             display: inline-block;
             height: 60px;
             line-height: 62px;
             vertical-align: middle;
 
-            &.now{
+            &.now {
                 color: $maincolor;
             }
 
-            &.next{
+            &.next {
                 margin-left: 30px;
+            }
+        }
+    }
+
+    .feed_form {
+        form {
+            .form_top {
+                padding-bottom: 15px;
+                border-bottom: 4px solid rgba(41, 44, 47, 0.2);
+
+                .title{
+                    border: none;
+                    margin: 0;
+                    padding: 0 15px;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
         }
     }

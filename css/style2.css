@@ -161,11 +161,12 @@ main .navigation .nav_item .nav_block .nav_content img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;
-  margin-right: 5px;
+  margin: 10px 5px 10px 0;
+  border: 2px solid #292c2f;
 }
 
 main .navigation .nav_item .primary_btn {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 main .navigation .nav_item .primary_btn i {
@@ -346,6 +347,20 @@ main nav span.now {
 
 main nav span.next {
   margin-left: 30px;
+}
+
+main .feed_form form .form_top {
+  padding-bottom: 15px;
+  border-bottom: 4px solid rgba(41, 44, 47, 0.2);
+}
+
+main .feed_form form .form_top .title {
+  border: none;
+  margin: 0;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 footer {
