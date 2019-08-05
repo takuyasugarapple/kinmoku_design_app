@@ -49,71 +49,229 @@
     <main>
         <div class="container" data-sticky_parent>
             <div class="row justify-content-md-center">
-                <div class="col-lg-3 navigation">
-                    <div class="nav_stick" data-sticky_column>
+                <div class="col-lg-4 navigation">
+                    <div class="nav_stick">
                         <a class="logomark" href="q&a-index.html">
                             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
                         </a>
-                        <div class="nav_item">
-                            <a href="q&a-index.html" class="nav_block active">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-home-alt'></i>
-                                        <h4>ホーム</h4>
+                        <div class="accordion" id="accordion">
+                            <!-- title -->
+                            <div class="title_text">
+                                <h2>Markdown記法</h2>
+                                <p>Markdownと呼ばれる記法を使うと、文章を読みやすくすることができます。</p>
+                            </div>
+                            <!-- title -->
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        見出し <span>#</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        [#]が1つでh1（タイトル）[##]が2つでh2タグ（大見出し）となり6つまで差別化して記述することができます。
+                                        <br><br>
+                                        また、h1とh2に関しては文章の改行後に[]=]を2つ以上記述するとh1に改行後に[-]を2つ以上記述するとh2に変換することができます。
+                                        <a href="img/card_img1.png" target="_blank" class="card_img">
+                                            <img src="img/card_img1.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-tag-alt'></i>
-                                    <h4>タグ一覧</h4>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        改行
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
                                 </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-bell'></i>
-                                    <h4>通知</h4>
-                                </div>
-                            </a> -->
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-lightbulb-alt'></i>
-                                        <h4>404について</h4>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        シンプルにenterキーを押すと改行することができます。
+                                        <a href="img/card_img2.png" target="_blank" class="card_img">
+                                            <img src="img/card_img2.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-edit-alt'></i>
-                                    <h4>マークダウン記法</h4>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        強調 <span>*</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
                                 </div>
-                            </a> -->
-                            <a href="prof.html" class="nav_block" target="_blank">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <img src="img/sample-icon.jpg" alt="アイコン">
-                                        <h4>プロフィール</h4>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        強調したい文字を[*]で囲むとemタグとなりイタリック調の記述になります。
+                                        <br>
+                                        [**]で囲うとstrongタグになり太字にすることができます。
+                                        <a href="img/card_img3.png" target="_blank" class="card_img">
+                                            <img src="img/card_img3.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-cog'></i>
-                                        <h4>設定</h4>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">
+                                        文章などの引用 <span>></span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        引用する文章の前に[>]とスペースを入れると引用することができます。引用した文章中に引用した箇所があっても[>]の数を増やすことで対応することができます。
+                                        <a href="img/card_img4.png" target="_blank" class="card_img">
+                                            <img src="img/card_img4.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        外部とリンク <span>[]()</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        [リンクの文字列]と(URL)でリンクに変換することができます。
+                                        <a href="img/card_img5.png" target="_blank" class="card_img">
+                                            <img src="img/card_img5.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        画像の添付 <span>![]()</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        「![alt文字列](画像URL “title文字列”)」で画像が表示されます。
+                                        <!-- <a href="img/card_img3.png" target="_blank" class="card_img">
+                                            <img src="img/card_img3.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingSeven">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseSeven">
+                                        リスト <span>-</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+
+                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        [-], [＋], [*]のうちいずれかを使うことでリストを生成することができます。
+                                        <a href="img/card_img6.png" target="_blank" class="card_img">
+                                            <img src="img/card_img6.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingEight">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        テーブル <span>|</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        [|]と[---]の組み合わせで簡単な表を作成することができます。[:]と[---]を用いることで表の中の文字を特定の方向に寄せることもできます。
+                                        <br><br>
+                                        - 左寄せの場合 `:---`
+                                        <br>
+                                        - 中央寄せの場合 `:---:`
+                                        <br>
+                                        - 右寄せの場合 `---:`
+                                        <a href="img/card_img2.png" target="_blank" class="card_img">
+                                            <img src="img/card_img2.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingNine">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                        水平線 <span>---</span>
+                                        <i class='uil uil-angle-down'></i>
+                                    </button>
+                                </div>
+                                <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        それほど使用頻度は高くありませんが、[-], [_], [*]いずれも3つ以上重ねて打つことで、水平線を作ることができます。
+                                        <a href="img/card_img3.png" target="_blank" class="card_img">
+                                            <img src="img/card_img3.png" class="img-fluid" alt="マークダウンの記法">
+                                            <i class='uil uil-search-plus'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9 feed_form">
+                <div class="col-lg-8 feed_form">
                     <form action="#">
                         <div class="form_top">
                             <input class="title" type="text" placeholder="タイトル：わからないこと、解決したいことを10文字以上で書いてください">
                         </div>
                     </form>
+
+                    <div class="post_btn">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-8" style="display: flex;">
+                                <a class="primary_btn post_a">
+                                    キャンセル
+                                </a>
+                                <button class="primary_btn">
+                                    投稿する
+                                    <i class="fab fa-telegram-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
