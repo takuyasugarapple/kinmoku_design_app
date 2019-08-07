@@ -118,6 +118,23 @@ h6,
     }
 }
 
+body .user-avatar-nav {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 // ------------------------------------------------
 
 
@@ -219,10 +236,10 @@ main {
             .card-header {
                 padding: 0;
 
-                span{
+                span {
                     color: $maincolor;
                 }
-                
+
                 button {
                     width: 100%;
                     padding: .75rem 1rem;
@@ -241,8 +258,8 @@ main {
                         }
                     }
 
-                    &:hover{
-                        background: rgba(0,0,0,.1);
+                    &:hover {
+                        background: rgba(0, 0, 0, .1);
                     }
                 }
             }
@@ -255,11 +272,11 @@ main {
                     display: block;
                     margin-top: 10px;
 
-                    &:hover{
+                    &:hover {
                         opacity: 0.6;
                     }
 
-                    i{
+                    i {
                         position: absolute;
                         right: 0;
                         bottom: 0;
@@ -837,7 +854,202 @@ main {
     }
 }
 
+.signup {
+    margin: 0 auto;
 
+    .signup_form {
+
+        form {
+            width: 100%;
+
+            .form_group {
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+
+                .label_name,
+                .label_mail,
+                .label_pass,
+                .label_repass {
+                    position: absolute;
+                    top: 5px;
+                    left: 15px;
+                    font-size: 16px;
+                    color: #a0a0a0;
+                    transition: all 0.25s ease;
+
+                    &.focus {
+                        top: -25px;
+                        left: 5px;
+                        font-size: 14px;
+                        color: $maincolor;
+                    }
+                }
+
+                .textbox_name,
+                .textbox_mail,
+                .textbox_pass,
+                .textbox_repass {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    margin-top: 35px;
+                    padding: 5px 15px;
+                    border: none;
+                    font-size: 16px;
+                    color: #000;
+                    outline: none;
+                    background: #fff;
+                    border-bottom: 1px solid #ccc;
+
+                    &:hover {
+                        border-bottom: 1px solid $maincolor;
+                    }
+                }
+
+                .agree {
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    letter-spacing: 1px;
+                    font-size: 13px;
+
+                    .privacy_policy {
+                        color: $maincolor;
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .agree_cbox {
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        background: #e6e6e6;
+
+                        &::after {
+                            left: 8px;
+                            top: 4px;
+                            width: 5px;
+                            height: 11px;
+                            border: solid #fff;
+                            border-width: 0 2px 2px 0;
+                            transform: rotate(45deg);
+                            content: '';
+                            position: absolute;
+                            display: none;
+                        }
+                    }
+
+                    input {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+
+                        &:checked~.agree_cbox {
+                            background: $maincolor;
+
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form_pass {
+                font-size: 12px;
+                color: #999;
+
+                a {
+                    color: $maincolor;
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .primary_btn {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .social_login {
+        margin-top: 20px;
+
+        span {
+            margin-right: 15px;
+            display: inline-block;
+        }
+
+        .social_icon {
+            display: flex;
+
+            li {
+                width: 50%;
+                margin-bottom: 20px;
+                
+                &:hover{
+                    opacity: 0.8;
+                    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+                }
+
+                a {
+                    width: 100%;
+                    display: inline-block;
+                    font-size: 20px;
+                    color: #ffffff;
+                    text-align: center;
+                    margin-left: 3px;
+                    position: relative;
+                    padding: 10px;
+                    font-weight: bold;
+                }
+
+                i{
+                    margin-right: 10px;
+                }
+
+                .fb {
+                    background-color: #3B5998;
+                }
+
+                .gg {
+                    background-color: #DB4437;
+                }
+            }
+        }
+    }
+
+    .signup_img {
+        text-align: center;
+        margin-top: 40px;
+
+        .img_link {
+            font-size: 14px;
+            color: $maincolor;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
 
 
 

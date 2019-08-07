@@ -114,6 +114,23 @@ h6,
   color: white;
 }
 
+body .user-avatar-nav {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
 main {
   margin-top: 30px;
   margin-bottom: 100px;
@@ -775,6 +792,206 @@ main .post_btn .primary_btn.post_a {
 main .post_btn .primary_btn.post_a:hover {
   color: white;
   background: #FE2F5F;
+}
+
+.signup {
+  margin: 0 auto;
+}
+
+.signup .signup_form form {
+  width: 100%;
+}
+
+.signup .signup_form form .form_group {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signup .signup_form form .form_group .label_name,
+.signup .signup_form form .form_group .label_mail,
+.signup .signup_form form .form_group .label_pass,
+.signup .signup_form form .form_group .label_repass {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 16px;
+  color: #a0a0a0;
+  transition: all 0.25s ease;
+}
+
+.signup .signup_form form .form_group .label_name.focus,
+.signup .signup_form form .form_group .label_mail.focus,
+.signup .signup_form form .form_group .label_pass.focus,
+.signup .signup_form form .form_group .label_repass.focus {
+  top: -25px;
+  left: 5px;
+  font-size: 14px;
+  color: #4288FB;
+}
+
+.signup .signup_form form .form_group .textbox_name,
+.signup .signup_form form .form_group .textbox_mail,
+.signup .signup_form form .form_group .textbox_pass,
+.signup .signup_form form .form_group .textbox_repass {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 35px;
+  padding: 5px 15px;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.signup .signup_form form .form_group .textbox_name:hover,
+.signup .signup_form form .form_group .textbox_mail:hover,
+.signup .signup_form form .form_group .textbox_pass:hover,
+.signup .signup_form form .form_group .textbox_repass:hover {
+  border-bottom: 1px solid #4288FB;
+}
+
+.signup .signup_form form .form_group .agree {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.signup .signup_form form .form_group .agree .privacy_policy {
+  color: #4288FB;
+  text-decoration: underline;
+}
+
+.signup .signup_form form .form_group .agree .privacy_policy:hover {
+  text-decoration: none;
+}
+
+.signup .signup_form form .form_group .agree .agree_cbox {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+
+.signup .signup_form form .form_group .agree .agree_cbox::after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.signup .signup_form form .form_group .agree input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.signup .signup_form form .form_group .agree input:checked ~ .agree_cbox {
+  background: #4288FB;
+}
+
+.signup .signup_form form .form_group .agree input:checked ~ .agree_cbox::after {
+  display: block;
+}
+
+.signup .signup_form form .form_pass {
+  font-size: 12px;
+  color: #999;
+}
+
+.signup .signup_form form .form_pass a {
+  color: #4288FB;
+  text-decoration: underline;
+}
+
+.signup .signup_form form .form_pass a:hover {
+  text-decoration: none;
+}
+
+.signup .signup_form form .primary_btn {
+  cursor: pointer;
+}
+
+.signup .social_login {
+  margin-top: 20px;
+}
+
+.signup .social_login span {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.signup .social_login .social_icon {
+  display: flex;
+}
+
+.signup .social_login .social_icon li {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.signup .social_login .social_icon li:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.signup .social_login .social_icon li a {
+  width: 100%;
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 3px;
+  position: relative;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.signup .social_login .social_icon li i {
+  margin-right: 10px;
+}
+
+.signup .social_login .social_icon li .fb {
+  background-color: #3B5998;
+}
+
+.signup .social_login .social_icon li .gg {
+  background-color: #DB4437;
+}
+
+.signup .signup_img {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.signup .signup_img .img_link {
+  font-size: 14px;
+  color: #4288FB;
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+}
+
+.signup .signup_img .img_link:hover {
+  text-decoration: none;
 }
 
 .title_text {
