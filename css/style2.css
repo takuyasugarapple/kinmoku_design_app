@@ -38,6 +38,10 @@ li {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .h1,
 .h2,
 .h3,
@@ -136,41 +140,77 @@ main {
   margin-bottom: 100px;
 }
 
+main .question_mobile {
+  display: none;
+}
+
+main .question_mobile .logomark .logo {
+  width: 20%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+main .question_mobile img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+main .question_mobile h3 {
+  margin: 30px 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+
 main .navigation .logomark .logo {
   width: 30%;
 }
 
-main .navigation .nav_item {
-  margin: 5px 0;
+main .navigation .navbar-expand-lg {
+  position: relative;
+}
+
+main .navigation .navbar-expand-lg button {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  border-color: transparent;
+}
+
+main .navigation ul {
   width: 100%;
 }
 
-main .navigation .nav_item .nav_block {
+main .navigation ul .nav_item {
+  width: 100%;
+}
+
+main .navigation ul .nav_item .nav_block {
   padding: 10px 0;
   width: 100%;
   border-radius: 50px;
 }
 
-main .navigation .nav_item .nav_block.active {
+main .navigation ul .nav_item .nav_block.active {
   color: #4288FB;
 }
 
-main .navigation .nav_item .nav_block.active .nav_content .nav_box img {
+main .navigation ul .nav_item .nav_block.active .nav_content .nav_box img {
   border: 2px solid #4288FB;
 }
 
-main .navigation .nav_item .nav_block .nav_content {
+main .navigation ul .nav_item .nav_block .nav_content {
   padding: 10px;
   padding-left: 0;
   max-width: 100%;
 }
 
-main .navigation .nav_item .nav_block .nav_content:hover .nav_box {
+main .navigation ul .nav_item .nav_block .nav_content:hover .nav_box {
   background: rgba(66, 136, 251, 0.1);
   color: #4288FB;
 }
 
-main .navigation .nav_item .nav_block .nav_content .nav_box {
+main .navigation ul .nav_item .nav_block .nav_content .nav_box {
   transition-duration: 0.2s;
   box-align: center;
   align-items: center;
@@ -186,19 +226,19 @@ main .navigation .nav_item .nav_block .nav_content .nav_box {
   margin-left: -20px;
 }
 
-main .navigation .nav_item .nav_block .nav_content .nav_box i {
+main .navigation ul .nav_item .nav_block .nav_content .nav_box i {
   font-size: 2rem;
 }
 
-main .navigation .nav_item .nav_block .nav_content .nav_box i::before {
+main .navigation ul .nav_item .nav_block .nav_content .nav_box i::before {
   margin-left: 0;
 }
 
-main .navigation .nav_item .nav_block .nav_content .nav_box h4 {
+main .navigation ul .nav_item .nav_block .nav_content .nav_box h4 {
   margin: 0 10px;
 }
 
-main .navigation .nav_item .nav_block .nav_content .nav_box img {
+main .navigation ul .nav_item .nav_block .nav_content .nav_box img {
   border-radius: 100%;
   width: 2rem;
   height: 2rem;
@@ -207,7 +247,7 @@ main .navigation .nav_item .nav_block .nav_content .nav_box img {
   border: 2px solid #292c2f;
 }
 
-main .navigation .nav_item .primary_btn {
+main .navigation ul .nav_item .primary_btn {
   margin-top: 20px;
 }
 
@@ -635,7 +675,7 @@ main article .q_content {
   border-bottom: none;
 }
 
-main nav {
+main section {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -643,7 +683,7 @@ main nav {
   border-bottom: 1px solid rgba(41, 44, 47, 0.2);
 }
 
-main nav span {
+main section span {
   padding: 0 5px;
   display: inline-block;
   height: 60px;
@@ -651,11 +691,11 @@ main nav span {
   vertical-align: middle;
 }
 
-main nav span.now {
+main section span.now {
   color: #4288FB;
 }
 
-main nav span.next {
+main section span.next {
   margin-left: 30px;
 }
 
@@ -697,6 +737,7 @@ main .profile .prof_item h3 {
 main .profile .prof_item .social_link {
   margin-bottom: 5px;
   font-size: 1.1rem;
+  word-break: break-all;
 }
 
 main .profile .prof_item .social_link i {
@@ -710,6 +751,10 @@ main .profile .prof_item .social_link:hover {
 main .prof_edit {
   margin-bottom: 50px;
   padding-top: 20px;
+}
+
+main .prof_edit .col-lg-8 {
+  display: flex;
 }
 
 main .prof_edit .prof_a {
@@ -852,6 +897,8 @@ main .about .about_btn .primary_btn.best_a {
 
 main .company section {
   margin-bottom: 50px;
+  border: none;
+  text-align: left;
 }
 
 main .company h1 {
@@ -952,6 +999,11 @@ main .team .team-content span {
   -webkit-transition: 0.2s color;
   transition: 0.2s color;
   font-weight: bold;
+  padding: 0;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  vertical-align: middle;
 }
 
 main .team:hover::after {
@@ -1206,7 +1258,7 @@ footer {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
-  padding: 45px;
+  padding: 45px 30px;
   margin-top: 80px;
 }
 
@@ -1235,4 +1287,152 @@ footer p {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  main {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  main .navigation {
+    margin-bottom: 50px;
+  }
+  main .navigation .logomark .logo {
+    width: 15%;
+  }
+  main .navigation .navbar-expand-lg {
+    position: relative !important;
+  }
+  main article .feed_item .feed_link .feed_img.two_img img:first-child {
+    margin-right: 1.4%;
+  }
+  main article .feed_item .feed_link .feed_img.two_img a:first-child {
+    margin-right: 1.4%;
+  }
+  main article .feed_item .feed_link .feed_img.three_img img:nth-child(2) {
+    margin-right: 1.4%;
+  }
+  main article .feed_item .feed_link .feed_img.three_img a:nth-child(2) {
+    margin-right: 1.4%;
+  }
+  main article .feed_item .feed_link .feed_img.four_img img:first-child,
+  main article .feed_item .feed_link .feed_img.four_img img:nth-child(3) {
+    margin-right: 1.4%;
+  }
+  main article .feed_item .feed_link .feed_img.four_img a:first-child, main article .feed_item .feed_link .feed_img.four_img a:nth-child(3) {
+    margin-right: 1.4%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main .navigation {
+    margin-bottom: 30px;
+  }
+  main .navigation .navbar-expand-lg button {
+    top: -6px;
+  }
+  main .navigation ul .nav_item .primary_btn {
+    display: none;
+  }
+  main article .col-2 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  main article .col-10 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  main article .prof_item .entry_item b {
+    width: 100%;
+  }
+  main article .prof_item .entry_item p {
+    margin-top: 5px;
+  }
+  main article .feed_item .feed_link h4 {
+    font-size: 15px;
+  }
+  main article .feed_item .feed_link .feed_img img {
+    height: 120px;
+  }
+  main article .feed_item .feed_link .feed_img.two_img img:first-child {
+    margin-right: 0.4%;
+  }
+  main article .feed_item .feed_link .feed_img.two_img a:first-child {
+    margin-right: 0.4%;
+  }
+  main article .feed_item .feed_link .feed_img.three_img img:nth-child(2) {
+    margin-right: 0.4%;
+  }
+  main article .feed_item .feed_link .feed_img.three_img a:nth-child(2) {
+    margin-right: 0.4%;
+  }
+  main article .feed_item .feed_link .feed_img.four_img img:first-child,
+  main article .feed_item .feed_link .feed_img.four_img img:nth-child(3) {
+    margin-right: 0.4%;
+  }
+  main article .feed_item .feed_link .feed_img.four_img a:first-child, main article .feed_item .feed_link .feed_img.four_img a:nth-child(3) {
+    margin-right: 0.4%;
+  }
+  main .question_btn h5 {
+    font-size: 13px;
+  }
+  main .question_btn span {
+    font-size: 1.3rem;
+  }
+  main .evaluate_btn .primary_btn.best_a {
+    display: none;
+  }
+  main .comment {
+    display: none;
+  }
+  main .about .about_top .about_item h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  main .about .title_text h2 {
+    font-size: 20px;
+  }
+  main .about .about_btn .col-md-6:first-child {
+    margin-bottom: 20px;
+  }
+  main .company dl dt {
+    width: 30%;
+  }
+  main .company dl dd {
+    width: 70%;
+  }
+  main .profile {
+    padding: 20px 0 30px 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(41, 44, 47, 0.1);
+  }
+  main .profile .prof_item img {
+    width: 3rem;
+    height: 3rem;
+  }
+  main .profile .prof_item {
+    padding-left: 15px;
+  }
+  main .profile .prof_item:last-child {
+    padding-left: 0;
+  }
+  main .prof_edit .primary_btn {
+    margin-right: 0;
+  }
+  main .prof_edit .primary_btn:last-child {
+    display: none;
+  }
+  main .question_pc {
+    display: none;
+  }
+  main .question_mobile {
+    display: block;
+  }
+  .signup .social_login .social_icon {
+    display: block;
+  }
+  .signup .social_login .social_icon li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }

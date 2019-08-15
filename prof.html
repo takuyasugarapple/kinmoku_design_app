@@ -47,67 +47,68 @@
         <div class="container" data-sticky_parent>
             <div class="row justify-content-md-center">
                 <div class="col-lg-3 navigation">
-                    <div class="nav_stick" data-sticky_column>
+                    <nav class="navbar-expand-lg navbar-light" data-sticky_column>
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                         <a class="logomark" href="q&a-index.html">
                             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
                         </a>
-                        <div class="nav_item">
-                            <a href="q&a-index.html" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-home-alt'></i>
-                                        <h4>ホーム</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-tag-alt'></i>
-                                    <h4>タグ一覧</h4>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-bell'></i>
-                                    <h4>通知</h4>
-                                </div>
-                            </a> -->
-                            <a href="about.html" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-lightbulb-alt'></i>
-                                        <h4>404について</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-edit-alt'></i>
-                                    <h4>マークダウン記法</h4>
-                                </div>
-                            </a> -->
-                            <a href="prof.html" class="nav_block active" target="_blank">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <img src="img/sample-icon.jpg" alt="アイコン">
-                                        <h4>プロフィール</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-cog'></i>
-                                        <h4>設定</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="question.html" class="primary_btn" target="_blank">
-                                質問する
-                                <i class="fab fa-telegram-plane"></i>
-                            </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="">
+                                <li class="nav_item active">
+                                    <a href="q&a-index.html" class="nav_block active">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-home-alt'></i>
+                                                <h4>ホーム</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="about.html" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-lightbulb-alt'></i>
+                                                <h4>404について</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="prof.html" class="nav_block" target="_blank">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <img src="img/sample-icon.jpg" alt="アイコン">
+                                                <h4>プロフィール</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-cog'></i>
+                                                <h4>設定</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="question.html" class="primary_btn" target="_blank">
+                                        質問する
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="col-lg-9 contents">
 
@@ -119,10 +120,10 @@
 
                     <div class="profile">
                         <div class="row justify-content-md-center">
-                            <div class="col-lg-3 prof_item text-center">
+                            <div class="col-3 prof_item text-center">
                                 <img src="img/sample-icon.jpg" alt="">
                             </div>
-                            <div class="col-lg-9 prof_item">
+                            <div class="col-9 prof_item">
                                 <h2>takuya0909</h2>
                                 <p>design engineerです。大学二回です。未熟ながらも自分なりに哲学を持ってweb design, app design,
                                     UI設計などをしながらコーディングもします。本当に未熟を痛感させられる毎日。どんな分野でもデザイナーとして牽引できるような人を目指しており、インターン、自分のアプリなど尽力しています。
@@ -143,7 +144,7 @@
                     <div class="prof_edit">
                         <div class="row align-items-center">
                             <div class="col-lg-4"></div>
-                            <div class="col-lg-8" style="display: flex;">
+                            <div class="col-lg-8">
                                 <a class="primary_btn prof_a">
                                     ログアウト
                                     <i class='uil uil-exit'></i>
@@ -164,7 +165,7 @@
 
                     <article>
                         <div class="row justify-content-md-center">
-                            <div class="col-lg-2 prof_item text-center">
+                            <div class="col-2 prof_item text-center">
                                 <a href="#">
                                     <img src="img/sample-icon.jpg" alt="">
                                 </a>
@@ -174,7 +175,7 @@
                                     <span>1</span>
                                 </div>
                             </div>
-                            <div class="col-lg-10 feed_item">
+                            <div class="col-10 feed_item">
                                 <a href="#">
                                     <h5>iamjoker</h5>
                                 </a>
@@ -194,7 +195,7 @@
 
                     <article>
                         <div class="row justify-content-md-center">
-                            <div class="col-lg-2 prof_item text-center">
+                            <div class="col-2 prof_item text-center">
                                 <a href="#">
                                     <img src="img/sample-icon.jpg" alt="">
                                 </a>
@@ -204,7 +205,7 @@
                                     <span>121</span>
                                 </div>
                             </div>
-                            <div class="col-lg-10 feed_item">
+                            <div class="col-10 feed_item">
                                 <a href="#">
                                     <h5>Gandam2929</h5>
                                 </a>

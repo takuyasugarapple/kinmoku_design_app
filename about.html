@@ -47,67 +47,68 @@
         <div class="container" data-sticky_parent>
             <div class="row justify-content-md-center">
                 <div class="col-lg-3 navigation">
-                    <div class="nav_stick" data-sticky_column>
+                    <nav class="navbar-expand-lg navbar-light" data-sticky_column>
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                         <a class="logomark" href="q&a-index.html">
                             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
                         </a>
-                        <div class="nav_item">
-                            <a href="q&a-index.html" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-home-alt'></i>
-                                        <h4>ホーム</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-tag-alt'></i>
-                                    <h4>タグ一覧</h4>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-bell'></i>
-                                    <h4>通知</h4>
-                                </div>
-                            </a> -->
-                            <a href="about.html" class="nav_block active">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-lightbulb-alt'></i>
-                                        <h4>404について</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-edit-alt'></i>
-                                    <h4>マークダウン記法</h4>
-                                </div>
-                            </a> -->
-                            <a href="prof.html" class="nav_block" target="_blank">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <img src="img/sample-icon.jpg" alt="アイコン">
-                                        <h4>プロフィール</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-cog'></i>
-                                        <h4>設定</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="question.html" class="primary_btn" target="_blank">
-                                質問する
-                                <i class="fab fa-telegram-plane"></i>
-                            </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="">
+                                <li class="nav_item active">
+                                    <a href="q&a-index.html" class="nav_block active">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-home-alt'></i>
+                                                <h4>ホーム</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="about.html" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-lightbulb-alt'></i>
+                                                <h4>404について</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="prof.html" class="nav_block" target="_blank">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <img src="img/sample-icon.jpg" alt="アイコン">
+                                                <h4>プロフィール</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-cog'></i>
+                                                <h4>設定</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="question.html" class="primary_btn" target="_blank">
+                                        質問する
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="col-lg-9 about">
                     <div class="about_top">
@@ -120,7 +121,7 @@
                                 <p>自分たちは404と言うオンラインでデザインを”リデザイン”と言う概念から学び、生み出すQ&Aプラットフォームサービスを提供します。</p>
                             </div>
                             <div class="col-lg-6">
-                                <img src="img/about_img.png" class="img-fluid" alt="404について">
+                                <img src="img/about_img.svg" class="img-fluid" alt="404について">
                             </div>
                         </div>
                     </div>
@@ -161,13 +162,13 @@
                         <!-- title -->
                         <h4>あなたのデザインに対する行動が、必ず多くのデザイナーの為になります。</h4>
                         <div class="row about_btn">
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                                 <a class="primary_btn">
                                     質問する
                                     <i class='uil uil-comment-question'></i>
                                 </a>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-md-6">
                                 <a class="primary_btn best_a">
                                     回答する
                                     <i class='uil uil-comments'></i>

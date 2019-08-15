@@ -47,61 +47,68 @@
         <div class="container" data-sticky_parent>
             <div class="row justify-content-md-center">
                 <div class="col-lg-3 navigation">
-                    <div class="nav_stick" data-sticky_column>
+                    <nav class="navbar-expand-lg navbar-light" data-sticky_column>
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                         <a class="logomark" href="q&a-index.html">
                             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
                         </a>
-                        <div class="nav_item">
-                            <a href="q&a-index.html" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-home-alt'></i>
-                                        <h4>ホーム</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-tag-alt'></i>
-                                    <h4>タグ一覧</h4>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <i class='uil uil-bell'></i>
-                                    <h4>通知</h4>
-                                </div>
-                            </a> -->
-                            <a href="about.html" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-lightbulb-alt'></i>
-                                        <h4>404について</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="prof.html" class="nav_block" target="_blank">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <img src="img/sample-icon.jpg" alt="アイコン">
-                                        <h4>プロフィール</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="nav_block">
-                                <div class="nav_content">
-                                    <div class="nav_box">
-                                        <i class='uil uil-cog'></i>
-                                        <h4>設定</h4>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="question.html" class="primary_btn" target="_blank">
-                                質問する
-                                <i class="fab fa-telegram-plane"></i>
-                            </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="">
+                                <li class="nav_item active">
+                                    <a href="q&a-index.html" class="nav_block active">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-home-alt'></i>
+                                                <h4>ホーム</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="about.html" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-lightbulb-alt'></i>
+                                                <h4>404について</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="prof.html" class="nav_block" target="_blank">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <img src="img/sample-icon.jpg" alt="アイコン">
+                                                <h4>プロフィール</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="#" class="nav_block">
+                                        <div class="nav_content">
+                                            <div class="nav_box">
+                                                <i class='uil uil-cog'></i>
+                                                <h4>設定</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="nav_item">
+                                    <a href="question.html" class="primary_btn" target="_blank">
+                                        質問する
+                                        <i class="fab fa-telegram-plane"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="col-lg-9 company">
                     <section>
@@ -137,7 +144,7 @@
                         <div class="row">
 
                             <!-- team -->
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="team">
                                     <div class="team-img">
                                         <img class="img-responsive" src="img/team3.jpg" alt="">
@@ -163,7 +170,7 @@
                             <!-- /team -->
 
                             <!-- team -->
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="team">
                                     <div class="team-img">
                                         <img class="img-responsive" src="img/team2.jpg" alt="">
@@ -185,27 +192,27 @@
                             <!-- /team -->
 
                             <!-- team -->
-                            <div class="col-lg-4">
-                                    <div class="team">
-                                        <div class="team-img">
-                                            <img class="img-responsive" src="img/team5.jpg" alt="">
-                                            <div class="overlay">
-                                                <div class="team-social">
-                                                    <a href="https://www.facebook.com/hsmtkusk" target="_blank"><i
-                                                            class='uil uil-facebook-f'></i></a>
-                                                </div>
+                            <div class="col-md-4">
+                                <div class="team">
+                                    <div class="team-img">
+                                        <img class="img-responsive" src="img/team5.jpg" alt="">
+                                        <div class="overlay">
+                                            <div class="team-social">
+                                                <a href="https://www.facebook.com/hsmtkusk" target="_blank"><i
+                                                        class='uil uil-facebook-f'></i></a>
                                             </div>
                                         </div>
-                                        <div class="team-content">
-                                            <h3>橋本幸典</h3>
-                                            <span>BizDev / COO</span>
-                                        </div>
+                                    </div>
+                                    <div class="team-content">
+                                        <h3>橋本幸典</h3>
+                                        <span>BizDev / COO</span>
                                     </div>
                                 </div>
-                                <!-- /team -->
+                            </div>
+                            <!-- /team -->
 
                             <!-- team -->
-                            <div class="col-lg-4">
+                            <div class="col-md-4">
                                 <div class="team">
                                     <div class="team-img">
                                         <img class="img-responsive" src="img/team4.jpg" alt="">
@@ -240,7 +247,7 @@
         <p>まだ見ぬCreativityを誰もが作り出す世界の創造</p>
         <p class="mt-2">404 DSIGNERS &copy; 2019</p>
     </footer>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
