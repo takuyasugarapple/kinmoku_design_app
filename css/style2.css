@@ -185,18 +185,18 @@ main .navigation ul .nav_item {
   width: 100%;
 }
 
+main .navigation ul .nav_item.active {
+  color: #4288FB;
+}
+
+main .navigation ul .nav_item.active .nav_content .nav_box img {
+  border: 2px solid #4288FB;
+}
+
 main .navigation ul .nav_item .nav_block {
   padding: 10px 0;
   width: 100%;
   border-radius: 50px;
-}
-
-main .navigation ul .nav_item .nav_block.active {
-  color: #4288FB;
-}
-
-main .navigation ul .nav_item .nav_block.active .nav_content .nav_box img {
-  border: 2px solid #4288FB;
 }
 
 main .navigation ul .nav_item .nav_block .nav_content {
@@ -312,57 +312,57 @@ main .navigation .accordion .card-body .card_img i {
   bottom: 0;
 }
 
-main .contents .contetns_order {
-  padding-bottom: 18px;
+main .contetns_order {
   border-bottom: 4px solid rgba(41, 44, 47, 0.2);
 }
 
-main .contents .contetns_order::before {
+main .contetns_order::before {
   content: "";
   display: table;
 }
 
-main .contents .contetns_order::after {
+main .contetns_order::after {
   content: "";
   clear: both;
   display: table;
 }
 
-main .contents .contetns_order h6 {
-  opacity: 0.4;
-  margin-bottom: 0;
-  margin-right: 40px;
-  align-items: center;
-  align-content: center;
-  text-align: right;
+main .contetns_order ul {
   float: right;
 }
 
-main .contents .contetns_order ul {
-  float: right;
-}
-
-main .contents .contetns_order ul li {
-  margin-right: 15px;
+main .contetns_order ul li {
   float: right;
   font-size: 14px;
 }
 
-main .contents .contetns_order ul li:first-child {
+main .contetns_order ul li:first-child {
   margin-right: 0;
 }
 
-main .contents .contetns_order ul li.active {
+main .contetns_order ul li.active a {
   font-weight: bold;
   color: #4288FB;
 }
 
-main .contents .contetns_order ul li:hover {
+main .contetns_order ul li:hover {
   color: #4288FB;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
+}
+
+main .contetns_order ul li a {
+  display: inline-block;
+  padding-bottom: 0.75em;
+  padding-left: 2em;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+  font-size: 16px;
 }
 
 main article {
@@ -1289,20 +1289,84 @@ footer p {
   margin: 0;
 }
 
-@media only screen and (max-width: 991px) {
-  main {
-    margin-top: 30px;
-    margin-bottom: 100px;
-  }
-  main .navigation {
-    margin-bottom: 50px;
-  }
-  main .navigation .logomark .logo {
-    width: 15%;
-  }
-  main .navigation .navbar-expand-lg {
-    position: relative !important;
-  }
+#tabcontrol {
+  margin: 0;
+}
+
+#tabcontrol a {
+  display: inline-block;
+  border-radius: 0.75em 0.75em 0 0;
+  padding: 0.75em 1em;
+  padding-left: 0;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+#tabbody .tabpage {
+  padding-top: 1rem;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+}
+
+#tabbody .tabpage h3 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#tabbody .tabpage h3::after {
+  content: "";
+  display: block;
+  background: #4288FB;
+  width: 50px;
+  height: 7px;
+  border-radius: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#tabbody .tabpage p {
+  line-height: 1.9rem;
+}
+
+#tabbody .tabpage p span {
+  font-weight: bold;
+  color: #292c2f;
+}
+
+#tabbody .tabpage h4 {
+  border-left: 5px solid #4288FB;
+  padding: 5px 0;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+#tabbody .tabpage h5 i {
+  font-size: 1.5rem;
+  color: #FFB52F;
+}
+
+#tabbody .tabpage h5 i::before {
+  margin-left: 0;
+  margin-right: 0.8rem;
+}
+
+#tabbody .tabpage ul {
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+#tabbody .tabpage ul li {
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
   main article .feed_item .feed_link .feed_img.two_img img:first-child {
     margin-right: 1.4%;
   }
@@ -1321,6 +1385,22 @@ footer p {
   }
   main article .feed_item .feed_link .feed_img.four_img a:first-child, main article .feed_item .feed_link .feed_img.four_img a:nth-child(3) {
     margin-right: 1.4%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  main {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  main .navigation {
+    margin-bottom: 50px;
+  }
+  main .navigation .logomark .logo {
+    width: 15%;
+  }
+  main .navigation .navbar-expand-lg {
+    position: relative !important;
   }
 }
 

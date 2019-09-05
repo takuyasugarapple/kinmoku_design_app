@@ -147,10 +147,10 @@ main {
     margin-top: 30px;
     margin-bottom: 100px;
 
-    .question_mobile{
+    .question_mobile {
         display: none;
 
-        .logomark{
+        .logomark {
             .logo {
                 width: 20%;
                 margin: 0;
@@ -164,7 +164,7 @@ main {
             display: block;
         }
 
-        h3{
+        h3 {
             margin: 30px 0;
             text-align: center;
             line-height: 1.5em;
@@ -196,22 +196,22 @@ main {
                 // margin: 5px 0;
                 width: 100%;
 
+                &.active {
+                    color: $maincolor;
+
+                    .nav_content {
+                        .nav_box {
+                            img {
+                                border: 2px solid $maincolor;
+                            }
+                        }
+                    }
+                }
+
                 .nav_block {
                     padding: 10px 0;
                     width: 100%;
                     border-radius: 50px;
-
-                    &.active {
-                        color: $maincolor;
-
-                        .nav_content {
-                            .nav_box {
-                                img {
-                                    border: 2px solid $maincolor;
-                                }
-                            }
-                        }
-                    }
 
                     .nav_content {
                         padding: 10px;
@@ -330,56 +330,57 @@ main {
         }
     }
 
-    .contents {
-        .contetns_order {
-            padding-bottom: 18px;
-            border-bottom: 4px solid rgba(41, 44, 47, 0.2);
+    .contetns_order {
+        // padding-bottom: 18px;
+        border-bottom: 4px solid rgba(41, 44, 47, 0.2);
 
-            &::before {
-                content: "";
-                display: table;
-            }
+        &::before {
+            content: "";
+            display: table;
+        }
 
-            &::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-            h6 {
-                opacity: 0.4;
-                margin-bottom: 0;
-                margin-right: 40px;
-                align-items: center;
-                align-content: center;
-                text-align: right;
+        ul {
+            float: right;
+
+            li {
                 float: right;
-            }
+                font-size: 14px;
 
-            ul {
-                float: right;
+                &:first-child {
+                    margin-right: 0;
+                }
 
-                li {
-                    margin-right: 15px;
-                    float: right;
-                    font-size: 14px;
-
-                    &:first-child {
-                        margin-right: 0;
-                    }
-
-                    &.active {
+                &.active {
+                    a {
                         font-weight: bold;
                         color: $maincolor;
                     }
+                }
 
-                    &:hover {
-                        color: $maincolor;
-                        -webkit-transition: all 0.1s ease;
-                        -moz-transition: all 0.1s ease;
-                        -o-transition: all 0.1s ease;
-                        transition: all 0.1s ease;
-                    }
+                &:hover {
+                    color: $maincolor;
+                    -webkit-transition: all 0.1s ease;
+                    -moz-transition: all 0.1s ease;
+                    -o-transition: all 0.1s ease;
+                    transition: all 0.1s ease;
+                }
+
+                a {
+                    display: inline-block;
+                    padding-bottom: 0.75em;
+                    padding-left: 2em;
+                    text-decoration: none;
+                    color: black;
+                    background-color: white;
+                    font-weight: bold;
+                    position: relative;
+                    font-size: 16px;
                 }
             }
         }
@@ -1360,27 +1361,90 @@ footer {
     }
 }
 
+#tabcontrol {
+    margin: 0;
 
+    a {
+        display: inline-block;
+        border-radius: 0.75em 0.75em 0 0;
+        padding: 0.75em 1em;
+        padding-left: 0;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        position: relative;
+    }
+}
 
-@media only screen and (max-width: 991px) {
-    main {
-        margin-top: 30px;
-        margin-bottom: 100px;
+#tabbody {
+    .tabpage {
+        padding-top: 1rem;
+        background-color: white;
+        position: relative;
+        z-index: 0;
 
-        .navigation {
-            margin-bottom: 50px;
+        h3 {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
 
-            .logomark {
-                .logo {
-                    width: 15%;
-                }
-            }
-
-            .navbar-expand-lg {
-                position: relative !important;
+            &::after {
+                content: "";
+                display: block;
+                background: $maincolor;
+                width: 50px;
+                height: 7px;
+                border-radius: 40px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
             }
         }
 
+        p {
+            line-height: 1.9rem;
+
+            span {
+                font-weight: bold;
+                color: rgb(41, 44, 47);
+            }
+        }
+
+        h4 {
+            border-left: 5px solid $maincolor;
+            padding: 5px 0;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        h5 {
+            i {
+                font-size: 1.5rem;
+                color: $accentcolor;
+
+                &::before {
+                    margin-left: 0;
+                    margin-right: 0.8rem;
+                }
+            }
+        }
+
+        ul {
+            padding-left: 35px;
+            margin-bottom: 30px;
+
+            li {
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main {
         article {
             .feed_item {
                 .feed_link {
@@ -1426,6 +1490,27 @@ footer {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    main {
+        margin-top: 30px;
+        margin-bottom: 100px;
+
+        .navigation {
+            margin-bottom: 50px;
+
+            .logomark {
+                .logo {
+                    width: 15%;
+                }
+            }
+
+            .navbar-expand-lg {
+                position: relative !important;
             }
         }
     }
@@ -1614,26 +1699,27 @@ footer {
         .prof_edit {
             .primary_btn {
                 margin-right: 0;
+
                 &:last-child {
                     display: none;
                 }
             }
         }
 
-        .question_pc{
+        .question_pc {
             display: none;
         }
-    
-        .question_mobile{
+
+        .question_mobile {
             display: block;
         }
     }
 
-    .signup {    
+    .signup {
         .social_login {
             .social_icon {
                 display: block;
-    
+
                 li {
                     width: 100%;
                     margin-bottom: 20px;

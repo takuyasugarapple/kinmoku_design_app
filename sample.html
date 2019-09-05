@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #tabcontrol{
+            margin: 0;
+        }
+        /* ▼タブ */
+        #tabcontrol a {
+            display: inline-block;
+            /* インラインブロック化 */
+            border-width: 1px 1px 0px 1px;
+            /* 下以外の枠線を引く */
+            border-style: solid;
+            /* 枠線の種類：実線 */
+            border-color: black;
+            /* 枠線の色：黒色 */
+            border-radius: 0.75em 0.75em 0 0;
+            /* 枠線の左上角と右上角だけを丸く */
+            padding: 0.75em 1em;
+            /* 内側の余白 */
+            text-decoration: none;
+            /* リンクの下線を消す */
+            color: black;
+            /* 文字色：黒色 */
+            background-color: white;
+            /* 背景色：白色 */
+            font-weight: bold;
+            /* 太字 */
+            position: relative;
+            /* JavaScriptでz-indexを調整するために必要 */
+        }
+
+        /* ▼タブにマウスポインタが載った際(任意) */
+        #tabcontrol a:hover {
+            text-decoration: underline;
+            /* 文字に下線を引く */
+        }
+
+        /* ▼タブの中身 */
+        #tabbody div {
+            border: 1px solid black;
+            /* 枠線：黒色の実線を1pxの太さで引く */
+            margin-top: -1px;
+            /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+            padding: 1em;
+            /* 内側の余白量 */
+            background-color: white;
+            /* 背景色：白色 */
+            position: relative;
+            /* z-indexを調整するために必要 */
+            z-index: 0;
+            /* 重なり順序を「最も背面」にするため */
+        }
+
+        #tabcontrol a:nth-child(1),
+        #tabbody div:nth-child(1) {
+            background-color: #ffffdd;
+        }
+
+        /* 1つ目のタブとその中身用の配色 */
+        #tabcontrol a:nth-child(2),
+        #tabbody div:nth-child(2) {
+            background-color: #ddffdd;
+        }
+
+        /* 2つ目のタブとその中身用の配色 */
+        #tabcontrol a:nth-child(3),
+        #tabbody div:nth-child(3) {
+            background-color: #ddddff;
+        }
+
+        /* 3つ目のタブとその中身用の配色 */
+    </style>
+</head>
+
+<body>
+    <p id="tabcontrol">
+        <a href="#tabpage1">タブ1</a>
+        <a href="#tabpage2">タブ2</a>
+        <a href="#tabpage3">タブ3</a>
+    </p>
+
+    <div id="tabbody">
+        <div id="tabpage1" style="display: block;">タブ1の中身<br>
+            <h2>■CSS3：</h2>
+            <ul>
+                <li><a href="http://allabout.co.jp/gm/gc/406310/">CSS3を使って画像や文字を任意の角度で回転させる方法</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/376450/">CSS3とは？ 機能が増えて便利になったスタイルシート</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/441854/">簡単に段組が作れる！CSS3、columnsプロパティ</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/406308/">CSS3のtransformで、文字を長体や平体で表示する方法</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/383707/">CSS3で偶数行・奇数行など「n番目」を限定装飾する</a></li>
+            </ul>
+        </div>
+        <div id="tabpage2" style="display: none;">タブ2の中身<br>
+            <h2>■JavaScript：</h2>
+            <ul>
+                <li><a href="http://allabout.co.jp/gm/gc/417216/">複数の画像がふわっと切り替わるスライドショーを作る</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/433920/">Skitterで迫力ある効果のスライドショーを作る方法</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/23931/">JavaScriptで画像のスライドショーを作成する方法</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/420327/">フォームの入力内容をリアルタイムにチェックする方法</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/23854/">JavaScriptで入力文字を制限(入力チェック)する方法</a></li>
+            </ul>
+        </div>
+        <div id="tabpage3" style="display: none;">タブ3の中身<br>
+            <h2>■フォント：</h2>
+            <ul>
+                <li><a href="http://allabout.co.jp/gm/gc/402551/">アイコンをWebフォントで表示！ Font Awesomeの使い方</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/394994/">望みのフォントで表示できる！ウェブフォントの使い方</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/435893/">使うアイコンだけを含む最小限のウェブフォントを作る</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/23929/">100種類以上ある！ ウェブ上で使える矢印記号</a></li>
+                <li><a href="http://allabout.co.jp/gm/gc/23895/">ハートマークを表示したい！ ハート記号の出し方</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // ---------------------------
+        // ▼A：対象要素を得る
+        // ---------------------------
+        var tabs = document.getElementById('tabcontrol').getElementsByTagName('a');
+        var pages = document.getElementById('tabbody').getElementsByTagName('div');
+
+        // ---------------------------
+        // ▼B：タブの切り替え処理
+        // ---------------------------
+        function changeTab() {
+            // ▼B-1. href属性値から対象のid名を抜き出す
+            var targetid = this.href.substring(this.href.indexOf('#') + 1, this.href.length);
+
+            // ▼B-2. 指定のタブページだけを表示する
+            for (var i = 0; i < pages.length; i++) {
+                if (pages[i].id != targetid) {
+                    pages[i].style.display = "none";
+                } else {
+                    pages[i].style.display = "block";
+                }
+            }
+
+            // ▼B-3. クリックされたタブを前面に表示する
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.zIndex = "0";
+            }
+            this.style.zIndex = "10";
+
+            // ▼B-4. ページ遷移しないようにfalseを返す
+            return false;
+        }
+
+        // ---------------------------
+        // ▼C：すべてのタブに対して、クリック時にchangeTab関数が実行されるよう指定する
+        // ---------------------------
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].onclick = changeTab;
+        }
+
+        // ---------------------------
+        // ▼D：最初は先頭のタブを選択しておく
+        // ---------------------------
+        tabs[0].onclick();
+    </script>
+
+</body>
+
+</html>

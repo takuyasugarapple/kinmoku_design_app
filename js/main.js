@@ -73,6 +73,4 @@ $(document).ready(function () {
         $lightbox.find('.close').removeClass('hidden');
     });
 
-    
-
 });
