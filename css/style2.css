@@ -939,6 +939,16 @@ main .company dl dd {
   margin-bottom: 30px;
 }
 
+main .company ul li {
+  list-style: disc;
+}
+
+main .company h3 {
+  border-left: 5px solid #4288FB;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
 main .team {
   position: relative;
   background-color: #F4F4F4;
