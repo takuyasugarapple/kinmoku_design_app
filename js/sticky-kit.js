@@ -97,6 +97,7 @@
         height = elm.outerHeight(true);
         el_float = elm.css("float");
         if (spacer) {
+          spacer.addClass("unknown");
           spacer.css({
             width: outer_width(elm),
             height: height,

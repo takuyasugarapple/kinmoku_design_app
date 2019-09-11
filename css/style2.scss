@@ -374,7 +374,7 @@ main {
                 a {
                     display: inline-block;
                     padding-bottom: 0.75em;
-                    padding-left: 2em;
+                    padding-left: em;
                     text-decoration: none;
                     color: black;
                     background-color: white;
@@ -1511,7 +1511,12 @@ footer {
 
             .navbar-expand-lg {
                 position: relative !important;
+                top: 0 !important;
             }
+        }
+
+        .unknown{
+            display: none !important;
         }
     }
 }
