@@ -330,7 +330,7 @@ main {
         }
     }
 
-    .contetns_order {
+    .contents_order {
         // padding-bottom: 18px;
         border-bottom: 4px solid rgba(41, 44, 47, 0.2);
 
@@ -351,6 +351,7 @@ main {
             li {
                 float: right;
                 font-size: 14px;
+                margin-right: 20px;
 
                 &:first-child {
                     margin-right: 0;
@@ -903,12 +904,22 @@ main {
     }
 
     .about {
-        h4 {
+        h4{
+            line-height: 2;
+
+            a{
+                color: $maincolor;
+                text-decoration: underline;
+            }
+        }
+
+        .h4 {
             color: $accentcolor;
+            line-height: 1.2
         }
 
         .about_top {
-            margin-bottom: 30px;
+            margin-bottom: 100px;
 
             .about_item {
                 margin-top: 30px;
@@ -922,26 +933,31 @@ main {
         }
 
         .about_article {
-            .title_text {
+            h2 {
+                position: relative;
+                padding-bottom: 20px;
                 margin-bottom: 30px;
+    
+                &::after {
+                    content: "";
+                    display: block;
+                    background: $maincolor;
+                    width: 50px;
+                    height: 7px;
+                    border-radius: 40px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            h3 {
+                color: $accentcolor;
+                margin-bottom: 20px;
             }
 
             .about_box {
-                margin-bottom: 70px;
-
-                h3 {
-                    border-left: 5px solid $accentcolor;
-                    padding-left: 15px;
-                    margin-bottom: 20px;
-                }
-
-                p {
-                    margin-bottom: 20px;
-
-                    span {
-                        font-weight: bold;
-                    }
-                }
+                margin-bottom: 100px;
             }
         }
 

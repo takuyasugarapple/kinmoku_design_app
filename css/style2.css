@@ -312,40 +312,41 @@ main .navigation .accordion .card-body .card_img i {
   bottom: 0;
 }
 
-main .contetns_order {
+main .contents_order {
   border-bottom: 4px solid rgba(41, 44, 47, 0.2);
 }
 
-main .contetns_order::before {
+main .contents_order::before {
   content: "";
   display: table;
 }
 
-main .contetns_order::after {
+main .contents_order::after {
   content: "";
   clear: both;
   display: table;
 }
 
-main .contetns_order ul {
+main .contents_order ul {
   float: right;
 }
 
-main .contetns_order ul li {
+main .contents_order ul li {
   float: right;
   font-size: 14px;
+  margin-right: 20px;
 }
 
-main .contetns_order ul li:first-child {
+main .contents_order ul li:first-child {
   margin-right: 0;
 }
 
-main .contetns_order ul li.active a {
+main .contents_order ul li.active a {
   font-weight: bold;
   color: #4288FB;
 }
 
-main .contetns_order ul li:hover {
+main .contents_order ul li:hover {
   color: #4288FB;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
@@ -353,7 +354,7 @@ main .contetns_order ul li:hover {
   transition: all 0.1s ease;
 }
 
-main .contetns_order ul li a {
+main .contents_order ul li a {
   display: inline-block;
   padding-bottom: 0.75em;
   padding-left: em;
@@ -841,11 +842,21 @@ main .post_btn .primary_btn.post_a:hover {
 }
 
 main .about h4 {
+  line-height: 2;
+}
+
+main .about h4 a {
+  color: #4288FB;
+  text-decoration: underline;
+}
+
+main .about .h4 {
   color: #FFB52F;
+  line-height: 1.2;
 }
 
 main .about .about_top {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 main .about .about_top .about_item {
@@ -858,26 +869,31 @@ main .about .about_top .about_item h2 {
   letter-spacing: 2px;
 }
 
-main .about .about_article .title_text {
+main .about .about_article h2 {
+  position: relative;
+  padding-bottom: 20px;
   margin-bottom: 30px;
 }
 
+main .about .about_article h2::after {
+  content: "";
+  display: block;
+  background: #4288FB;
+  width: 50px;
+  height: 7px;
+  border-radius: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+main .about .about_article h3 {
+  color: #FFB52F;
+  margin-bottom: 20px;
+}
+
 main .about .about_article .about_box {
-  margin-bottom: 70px;
-}
-
-main .about .about_article .about_box h3 {
-  border-left: 5px solid #FFB52F;
-  padding-left: 15px;
-  margin-bottom: 20px;
-}
-
-main .about .about_article .about_box p {
-  margin-bottom: 20px;
-}
-
-main .about .about_article .about_box p span {
-  font-weight: bold;
+  margin-bottom: 100px;
 }
 
 main .about .about_btn {
