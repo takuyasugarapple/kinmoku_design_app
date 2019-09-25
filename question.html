@@ -54,6 +54,29 @@
                         <a class="logomark" href="q&a-index.html">
                             <img src="img/404_logo.png" alt="404のロゴ" class="logo">
                         </a>
+                        <ul class="">
+                            <li class="nav_item">
+                                <a href="q&a-index.html" class="nav_block">
+                                    <div class="nav_content">
+                                        <div class="nav_box">
+                                            <i class='uil uil-home-alt'></i>
+                                            <h4>ホーム</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a class="nav_block" href="{{url('draft')}}">
+                                    <div class="nav_content">
+                                        <div class="nav_box">
+                                            <i class='uil uil-folder'></i>
+                                            <h4>下書き一覧</h4>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
                         <div class="accordion" id="accordion">
                             <!-- title -->
                             <div class="title_text">
@@ -260,10 +283,13 @@
 
                     <div class="post_btn">
                         <div class="row align-items-center">
-                            <div class="col-lg-4"></div>
-                            <div class="col-lg-8" style="display: flex;">
+                            <!-- <div class="col-lg-4"></div> -->
+                            <div class="col-lg-12" style="display: flex;">
                                 <a class="primary_btn post_a">
                                     キャンセル
+                                </a>
+                                <a class="primary_btn post_draft">
+                                    下書きにする
                                 </a>
                                 <button class="primary_btn">
                                     投稿する

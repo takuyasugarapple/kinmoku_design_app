@@ -390,6 +390,29 @@ main article .prof_item a img:hover {
   transition: all 0.3s ease;
 }
 
+main article .prof_item form input {
+  background: #fff;
+  color: #FE2F5F;
+  border-color: #FE2F5F;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50px;
+  width: 70%;
+  padding: 2px 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+main article .prof_item form input:hover {
+  background: #FE2F5F;
+  color: #fff;
+  border-color: #FE2F5F;
+}
+
 main article .prof_item .entry_item b {
   background: #f5f5f5;
   display: block;
@@ -700,18 +723,57 @@ main section span.next {
   margin-left: 30px;
 }
 
+main .pagesection .pagination {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid rgba(41, 44, 47, 0.2);
+  margin: 0px;
+  padding: 0px;
+}
+
+main .pagesection .pagination .page-item {
+  list-style-type: none;
+  display: inline-block;
+  height: 60px;
+  line-height: 62px;
+  vertical-align: middle;
+  margin: 0px 10px 0px 0px;
+}
+
+main .pagesection .pagination .page-item .page-link {
+  line-height: 62px;
+  background-color: transparent;
+  color: #292c2f;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px 5px;
+}
+
+main .pagesection .pagination .page-item.active .page-link {
+  color: #4288fb;
+}
+
 main form .form_top {
   padding-bottom: 15px;
   border-bottom: 4px solid rgba(41, 44, 47, 0.2);
+  margin-bottom: 20px;
 }
 
 main form .form_top .title {
   border: none;
   margin: 0;
-  padding: 0 15px;
   width: 100%;
   font-size: 20px;
   font-weight: bold;
+}
+
+main form .form_middle {
+  margin-bottom: 20px;
 }
 
 main .profile {
@@ -754,16 +816,31 @@ main .prof_edit {
   padding-top: 20px;
 }
 
-main .prof_edit .col-lg-8 {
-  display: flex;
-}
-
 main .prof_edit .prof_a {
   cursor: pointer;
-  margin-right: 30px;
   color: gray;
   border-color: gray;
   background: white;
+}
+
+main .prof_edit .primary_btn {
+  margin-right: 30px;
+}
+
+main .prof_edit .primary_btn.prof_draft {
+  margin-right: 30px;
+  color: #4288FB;
+  border-color: #4288FB;
+  background: white;
+}
+
+main .prof_edit .primary_btn.prof_draft:hover {
+  color: white;
+  background: #4288FB;
+}
+
+main .prof_edit .primary_btn:last-child {
+  margin-right: 0;
 }
 
 main .q_content {
@@ -786,7 +863,8 @@ main .question_btn .primary_btn {
 }
 
 main .question_btn .primary_btn:hover {
-  color: #4288FB;
+  background: #4288FB;
+  color: #fff;
 }
 
 main .evaluate_btn {
@@ -839,6 +917,18 @@ main .post_btn .primary_btn.post_a {
 main .post_btn .primary_btn.post_a:hover {
   color: white;
   background: #FE2F5F;
+}
+
+main .post_btn .primary_btn.post_draft {
+  margin-right: 30px;
+  color: #4288FB;
+  border-color: #4288FB;
+  background: white;
+}
+
+main .post_btn .primary_btn.post_draft:hover {
+  color: white;
+  background: #4288FB;
 }
 
 main .about h4 {
@@ -1093,21 +1183,11 @@ main .team .team-social a:hover {
 .signup .signup_form form .form_group .label_pass,
 .signup .signup_form form .form_group .label_repass {
   position: absolute;
-  top: 5px;
-  left: 15px;
-  font-size: 16px;
-  color: #a0a0a0;
-  transition: all 0.25s ease;
-}
-
-.signup .signup_form form .form_group .label_name.focus,
-.signup .signup_form form .form_group .label_mail.focus,
-.signup .signup_form form .form_group .label_pass.focus,
-.signup .signup_form form .form_group .label_repass.focus {
   top: -25px;
   left: 5px;
   font-size: 14px;
   color: #4288FB;
+  transition: all 0.25s ease;
 }
 
 .signup .signup_form form .form_group .textbox_name,
@@ -1276,6 +1356,15 @@ main .team .team-social a:hover {
 
 .title_text h2 {
   text-transform: capitalize;
+}
+
+.title_text h2.n_active {
+  opacity: 0.2;
+  transition: all 0.3s ease;
+}
+
+.title_text h2.n_active:hover {
+  opacity: 1;
 }
 
 footer {

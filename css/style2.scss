@@ -411,6 +411,31 @@ main {
                 }
             }
 
+            form{
+                input{
+                    background: #fff;
+                    color: $subcolor;
+                    border-color: $subcolor;
+                    display: block;
+                    margin-bottom: 6px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 20px;
+                    border-radius: 50px;
+                    width: 70%;
+                    padding: 2px 0;
+                    margin: auto;
+                    margin-top: 20px;
+
+                    &:hover{
+                        background: $subcolor;
+                        color: #fff;
+                        border-color: $subcolor;
+                    }
+                }
+            }
+
             .entry_item {
                 b {
                     background: #f5f5f5;
@@ -757,19 +782,62 @@ main {
         }
     }
 
+    .pagesection {
+        .pagination {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            display: block;
+            border-bottom: 1px solid rgba(41, 44, 47, 0.2);
+            margin: 0px;
+            padding: 0px;
+
+            .page-item {
+                list-style-type: none;
+                display: inline-block;
+                height: 60px;
+                line-height: 62px;
+                vertical-align: middle;
+                margin: 0px 10px 0px 0px;
+
+                .page-link {
+                    line-height: 62px;
+                    background-color: transparent;
+                    color: rgb(41, 44, 47);
+                    border-width: initial;
+                    border-style: none;
+                    border-color: initial;
+                    border-image: initial;
+                    padding: 0px 5px;
+                }
+
+                &.active {
+                    .page-link {
+                        color: rgb(66, 136, 251);
+                    }
+                }
+            }
+        }
+    }
+
     form {
         .form_top {
             padding-bottom: 15px;
             border-bottom: 4px solid rgba(41, 44, 47, 0.2);
+            margin-bottom: 20px;
 
             .title {
                 border: none;
                 margin: 0;
-                padding: 0 15px;
                 width: 100%;
                 font-size: 20px;
                 font-weight: bold;
             }
+        }
+
+        .form_middle {
+            margin-bottom: 20px;
         }
     }
 
@@ -815,16 +883,31 @@ main {
         margin-bottom: 50px;
         padding-top: 20px;
 
-        .col-lg-8 {
-            display: flex;
-        }
-
         .prof_a {
             cursor: pointer;
-            margin-right: 30px;
             color: gray;
             border-color: gray;
             background: white;
+        }
+
+        .primary_btn {
+            margin-right: 30px;
+
+            &.prof_draft {
+                margin-right: 30px;
+                color: $maincolor;
+                border-color: $maincolor;
+                background: white;
+    
+                &:hover {
+                    color: white;
+                    background: $maincolor;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 
@@ -846,7 +929,8 @@ main {
             color: $maincolor;
 
             &:hover {
-                color: $maincolor;
+                background: $maincolor;
+                color: #fff;
             }
         }
     }
@@ -900,14 +984,26 @@ main {
                     background: $subcolor;
                 }
             }
+
+            &.post_draft {
+                margin-right: 30px;
+                color: $maincolor;
+                border-color: $maincolor;
+                background: white;
+
+                &:hover {
+                    color: white;
+                    background: $maincolor;
+                }
+            }
         }
     }
 
     .about {
-        h4{
+        h4 {
             line-height: 2;
 
-            a{
+            a {
                 color: $maincolor;
                 text-decoration: underline;
             }
@@ -937,7 +1033,7 @@ main {
                 position: relative;
                 padding-bottom: 20px;
                 margin-bottom: 30px;
-    
+
                 &::after {
                     content: "";
                     display: block;
@@ -1169,18 +1265,11 @@ main {
                 .label_pass,
                 .label_repass {
                     position: absolute;
-                    top: 5px;
-                    left: 15px;
-                    font-size: 16px;
-                    color: #a0a0a0;
+                    top: -25px;
+                    left: 5px;
+                    font-size: 14px;
+                    color: $maincolor;
                     transition: all 0.25s ease;
-
-                    &.focus {
-                        top: -25px;
-                        left: 5px;
-                        font-size: 14px;
-                        color: $maincolor;
-                    }
                 }
 
                 .textbox_name,
@@ -1349,6 +1438,15 @@ main {
 
     h2 {
         text-transform: capitalize;
+
+        &.n_active{
+            opacity: 0.2;
+            transition: all 0.3s ease;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }
 
