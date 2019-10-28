@@ -1358,6 +1358,15 @@ main .team .team-social a:hover {
   text-transform: capitalize;
 }
 
+.title_text h2.n_active {
+  opacity: 0.1;
+}
+
+.title_text h2.n_active:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
 footer {
   background-color: #292c2f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);

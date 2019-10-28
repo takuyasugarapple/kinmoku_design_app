@@ -1438,6 +1438,15 @@ main {
 
     h2 {
         text-transform: capitalize;
+
+        &.n_active{
+            opacity: 0.1;
+
+            &:hover{
+                opacity: 1;
+                transition: all 0.3s ease;
+            }
+        }
     }
 }
 
